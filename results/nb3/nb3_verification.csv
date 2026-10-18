@@ -1,0 +1,116 @@
+section,check,result,detail
+1 splits,"2,777 patients, split file aligned with table",PASS,2777
+1 splits,one ICU stay per patient (subject_id unique),PASS,
+1 splits,no leaky / ID / outcome columns among 391 features,PASS,391
+1 splits,random_split: train/test disjoint and cover everyone,PASS,
+1 splits,"random_split: sizes (2221, 556)",PASS,"(2221, 556)"
+1 splits,random_split: test fingerprint unchanged,PASS,0a23991d2383
+1 splits,random_split: no patient (subject) in both parts,PASS,
+1 splits,random_split: mortality similar in train and test (<1.5 points),PASS,0.382 vs 0.381
+1 splits,temporal_split: train/test disjoint and cover everyone,PASS,
+1 splits,"temporal_split: sizes (1373, 1404)",PASS,"(1373, 1404)"
+1 splits,temporal_split: test fingerprint unchanged,PASS,8a4eb81d4c96
+1 splits,temporal_split: no patient (subject) in both parts,PASS,
+1 splits,temporal_split: mortality similar in train and test (<1.5 points),PASS,0.382 vs 0.382
+1 splits,"era split: train <= 2017, test > 2017",PASS,
+2 preparation,random_split: prepared train/test hold exactly the split patients,PASS,
+2 preparation,random_split: outcome in prepared files matches the table,PASS,
+2 preparation,random_split: no missing values after preparation,PASS,
+2 preparation,"random_split: same columns in train, test and fitted preparation",PASS,
+2 preparation,random_split: outcome not used as an input,PASS,
+2 preparation,random_split: missing-% rule learned from TRAINING rows only,PASS,
+2 preparation,random_split: every kept feature <=20% missing in train (lactate <=30%),PASS,
+2 preparation,random_split: lactate kept (pre-specified exception),PASS,
+2 preparation,random_split: clipping limits are TRAINING 0.5/99.5% quantiles,PASS,
+2 preparation,random_split: test file = training-fitted preparation applied to test,PASS,
+2 preparation,random_split: model inputs after preparation,INFO,342
+2 preparation,temporal_split: prepared train/test hold exactly the split patients,PASS,
+2 preparation,temporal_split: outcome in prepared files matches the table,PASS,
+2 preparation,temporal_split: no missing values after preparation,PASS,
+2 preparation,"temporal_split: same columns in train, test and fitted preparation",PASS,
+2 preparation,temporal_split: outcome not used as an input,PASS,
+2 preparation,temporal_split: missing-% rule learned from TRAINING rows only,PASS,
+2 preparation,temporal_split: every kept feature <=20% missing in train (lactate <=30%),PASS,
+2 preparation,temporal_split: lactate kept (pre-specified exception),PASS,
+2 preparation,temporal_split: clipping limits are TRAINING 0.5/99.5% quantiles,PASS,
+2 preparation,temporal_split: test file = training-fitted preparation applied to test,PASS,
+2 preparation,temporal_split: model inputs after preparation,INFO,341
+3 selection,pool decided once (random arm) and used in both arms,PASS,
+3 selection,pool rule: B used because AUC_B >= AUC_A - 0.005,PASS,A 0.7755 vs B 0.7763
+3 selection,random_split pool B: features = chosen in >=3 of 5 stability runs,PASS,
+3 selection,random_split pool B: 25 features,PASS,25
+3 selection,random_split pool B: all features exist in the prepared data,PASS,
+3 selection,random_split pool A: features = chosen in >=3 of 5 stability runs,PASS,
+3 selection,random_split pool A: 27 features,PASS,27
+3 selection,random_split pool A: all features exist in the prepared data,PASS,
+3 selection,random_split pool C: features = chosen in >=3 of 5 stability runs,PASS,
+3 selection,random_split pool C: 24 features,PASS,24
+3 selection,random_split pool C: all features exist in the prepared data,PASS,
+3 selection,random_split: primary set has no measurement-process features,PASS,
+3 selection,random_split: no-TPIFE set has no TPIFE/CSI/stability/OSBI features,PASS,
+3 selection,random_split: no leaky names among selected features,PASS,[]
+3 selection,temporal_split pool B: features = chosen in >=3 of 5 stability runs,PASS,
+3 selection,temporal_split pool B: 32 features,PASS,32
+3 selection,temporal_split pool B: all features exist in the prepared data,PASS,
+3 selection,temporal_split pool A: features = chosen in >=3 of 5 stability runs,PASS,
+3 selection,temporal_split pool A: 50 features,PASS,50
+3 selection,temporal_split pool A: all features exist in the prepared data,PASS,
+3 selection,temporal_split pool C: features = chosen in >=3 of 5 stability runs,PASS,
+3 selection,temporal_split pool C: 22 features,PASS,22
+3 selection,temporal_split pool C: all features exist in the prepared data,PASS,
+3 selection,temporal_split: primary set has no measurement-process features,PASS,
+3 selection,temporal_split: no-TPIFE set has no TPIFE/CSI/stability/OSBI features,PASS,
+3 selection,temporal_split: no leaky names among selected features,PASS,[]
+4 tuning,random_split: all 6 models tuned,PASS,
+4 tuning,random_split: class weights kept (SMOTEENN not better by >0.005),PASS,"{'XGB': {'class_weights': 0.7845, 'smoteenn': 0.7486}, 'LightGBM': {'class_weights': 0.7848, 'smoteenn': 0.7511}}"
+4 tuning,random_split: tuned on the final primary features,PASS,
+4 tuning,random_split: no tuned value stuck at a range edge (except natural limits),PASS,only natural limits
+4 tuning,temporal_split: all 6 models tuned,PASS,
+4 tuning,temporal_split: class weights kept (SMOTEENN not better by >0.005),PASS,"{'XGB': {'class_weights': 0.7732, 'smoteenn': 0.7145}, 'LightGBM': {'class_weights': 0.7733, 'smoteenn': 0.7236}}"
+4 tuning,temporal_split: tuned on the final primary features,PASS,
+4 tuning,temporal_split: no tuned value stuck at a range edge (except natural limits),PASS,only natural limits
+5 nested CV,NO test patient anywhere in nested-CV predictions,PASS,
+5 nested CV,all random-arm training patients used,PASS,
+5 nested CV,"each patient predicted exactly once per repeat, model and pool",PASS,
+5 nested CV,25 outer folds for every model and pool,PASS,[25]
+5 nested CV,fold AUCs re-computed from saved predictions match,PASS,
+5 nested CV,CV summary = mean of the 25 fold AUCs,PASS,
+5 nested CV,written model-choice rule re-applied -> SoftVoting,PASS,SoftVoting
+5 nested CV,nested-CV AUC (primary pool),INFO,"{'LR': 0.7595, 'RF': 0.7521, 'XGB': 0.7631, 'CatBoost': 0.7625, 'LightGBM': 0.7629, 'SoftVoting': 0.7645, 'Stacking': 0.7688}"
+5 nested CV,corrected t-test (TPIFE) re-computed matches,PASS,0.1542
+6 final model,random_split: final model type SoftVoting (same in both arms),PASS,
+6 final model,random_split: model uses exactly the selected primary features,PASS,
+6 final model,random_split: ablation models use the saved no-TPIFE / pool-A sets,PASS,
+6 final model,random_split: model uses the tuned settings,PASS,
+6 final model,"random_split: isotonic calibration, cv=5, one refit (ensemble=False)",PASS,
+6 final model,random_split: threshold source = training patients only (no test ids),PASS,
+6 final model,random_split: Youden threshold re-computed matches,PASS,0.4211
+6 final model,random_split: complete-case refit trained on 1402 patients,PASS,1402
+6 final model,random_split: Venn-Abers lower <= upper bound (40 patients),PASS,
+6 final model,temporal_split: final model type SoftVoting (same in both arms),PASS,
+6 final model,temporal_split: model uses exactly the selected primary features,PASS,
+6 final model,temporal_split: ablation models use the saved no-TPIFE / pool-A sets,PASS,
+6 final model,temporal_split: model uses the tuned settings,PASS,
+6 final model,"temporal_split: isotonic calibration, cv=5, one refit (ensemble=False)",PASS,
+6 final model,temporal_split: threshold source = training patients only (no test ids),PASS,
+6 final model,temporal_split: Youden threshold re-computed matches,PASS,0.3683
+6 final model,temporal_split: complete-case refit trained on 874 patients,PASS,874
+6 final model,temporal_split: Venn-Abers lower <= upper bound (40 patients),PASS,
+7 test,test sets first opened,INFO,2026-10-18T12:27:34
+7 test,nothing in the pipeline was changed after the test was opened,PASS,[]
+7 test,labs pilot: gain < +0.005 -> current model kept (25 features),PASS,gain +0.0048
+7 test,random_split: risk tiers = tertiles of TRAINING predictions,PASS,[0.229 0.491]
+7 test,"random_split: test predictions = exactly the test patients, correct outcome",PASS,
+7 test,random_split: saved test predictions reproduced by the saved final model,PASS,
+7 test,random_split: headline AUC / Brier re-computed match,PASS,0.7736
+7 test,random_split: pre-specified DeLong p-values re-computed match,PASS,
+7 test,random_split: every test patient in the tier given by the locked rule,PASS,
+7 test,random_split: Venn-Abers lower <= upper bound for all test patients,PASS,
+7 test,temporal_split: risk tiers = tertiles of TRAINING predictions,PASS,[0.225 0.5  ]
+7 test,"temporal_split: test predictions = exactly the test patients, correct outcome",PASS,
+7 test,temporal_split: saved test predictions reproduced by the saved final model,PASS,
+7 test,temporal_split: headline AUC / Brier re-computed match,PASS,0.7585
+7 test,temporal_split: pre-specified DeLong p-values re-computed match,PASS,
+7 test,temporal_split: every test patient in the tier given by the locked rule,PASS,
+7 test,temporal_split: Venn-Abers lower <= upper bound for all test patients,PASS,
+7 test,subgroups cover every test patient exactly once,PASS,

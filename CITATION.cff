@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying article (citation will be added on publication)."
+title: "Interpretable 24-hour prediction of 28-day mortality in ICU patients with cancer and delirium (MIMIC-IV)"
+authors:
+  - family-names: Kalwani
+    given-names: Devansh
+  - given-names: Arya
+date-released: 2026-10-18
+license: MIT

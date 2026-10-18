@@ -1,0 +1,16 @@
+setting,comparison,mean_auc_diff,p,scores
+Nested CV (corrected resampled t-test),SoftVoting: primary vs no-TPIFE,0.0079,0.154,out-of-fold AUROC per outer fold (25 folds)
+Nested CV (corrected resampled t-test),SoftVoting: with measurement vs primary,-0.0004,0.933,out-of-fold AUROC per outer fold (25 folds)
+Nested CV (corrected resampled t-test),SoftVoting vs Stacking,-0.0043,0.092,out-of-fold AUROC per outer fold (25 folds)
+Nested CV (corrected resampled t-test),SoftVoting vs SOFA,0.1778,<0.001,out-of-fold AUROC per outer fold (25 folds)
+Nested CV (corrected resampled t-test),SoftVoting vs APACHE-II,0.2117,<0.001,out-of-fold AUROC per outer fold (25 folds)
+Random-split test (DeLong),SoftVoting vs Stacking,0.0042,0.305,uncalibrated Soft-Voting scores vs comparator
+Random-split test (DeLong),SoftVoting vs SOFA,0.1912,<0.001,uncalibrated Soft-Voting scores vs comparator
+Random-split test (DeLong),SoftVoting vs APACHE-II,0.2132,<0.001,uncalibrated Soft-Voting scores vs comparator
+Random-split test (DeLong),SoftVoting vs SV_noTPIFE,0.0046,0.483,uncalibrated Soft-Voting scores vs comparator
+Random-split test (DeLong),SoftVoting vs SV_with_measurement,0.0081,0.230,uncalibrated Soft-Voting scores vs comparator
+Temporal test (DeLong),SoftVoting vs Stacking,-0.0074,<0.001,uncalibrated Soft-Voting scores vs comparator
+Temporal test (DeLong),SoftVoting vs SOFA,0.1751,<0.001,uncalibrated Soft-Voting scores vs comparator
+Temporal test (DeLong),SoftVoting vs APACHE-II,0.1964,<0.001,uncalibrated Soft-Voting scores vs comparator
+Temporal test (DeLong),SoftVoting vs SV_noTPIFE,0.0027,0.621,uncalibrated Soft-Voting scores vs comparator
+Temporal test (DeLong),SoftVoting vs SV_with_measurement,-0.0087,0.102,uncalibrated Soft-Voting scores vs comparator

@@ -1,0 +1,21 @@
+feature_1,feature_2,mean_abs_interaction
+Metastatic cancer,Age,0.0258727
+Temp mean 12-24h,Age,0.024148988
+Metastatic cancer,HR mean 0-6h,0.022983074
+Elixhauser score (chronic),Platelets max,0.02253781
+Metastatic cancer,GCS slope,0.019086858
+Metastatic cancer,Lactate min,0.018903885
+Elixhauser score (chronic),WBC min,0.018108977
+Metastatic cancer,HR mean 12-24h,0.01731462
+Metastatic cancer,RR abnormality burden,0.017220186
+Temp mean 12-24h,RR abnormality burden,0.016853772
+Temp mean 12-24h,Platelets max,0.016633999
+GCS slope,HR mean 0-6h,0.01654463
+Potassium min,RR abnormality burden,0.015472165
+Temp mean 12-24h,APACHE II age points,0.015127312
+Temp mean 12-24h,HR mean 12-24h,0.015090893
+GCS slope,GCS SD,0.0146051375
+Temp mean 12-24h,Lactate min,0.014476913
+WBC min,WBC SD,0.014280159
+Temp mean 12-24h,SOFA score,0.014277104
+SOFA score,HR mean 6-12h,0.0142603805

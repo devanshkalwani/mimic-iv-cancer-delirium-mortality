@@ -1,0 +1,41 @@
+{
+  "random_split": {
+    "A_all": {
+      "n": 27,
+      "auc": 0.7755,
+      "sd": 0.0129
+    },
+    "B_no_measurement": {
+      "n": 25,
+      "auc": 0.7763,
+      "sd": 0.0162
+    },
+    "C_no_TPIFE": {
+      "n": 24,
+      "auc": 0.7684,
+      "sd": 0.018
+    },
+    "pool_used": "B_no_measurement",
+    "n_primary": 25
+  },
+  "temporal_split": {
+    "A_all": {
+      "n": 50,
+      "auc": 0.7745,
+      "sd": 0.0164
+    },
+    "B_no_measurement": {
+      "n": 32,
+      "auc": 0.7562,
+      "sd": 0.0165
+    },
+    "C_no_TPIFE": {
+      "n": 22,
+      "auc": 0.7462,
+      "sd": 0.0216
+    },
+    "pool_used": "B_no_measurement",
+    "n_primary": 32
+  },
+  "rule": "Pool decided once on the primary random-split training data (B if AUC_B >= AUC_A - 0.005) and applied to both arms; Pool A and no-TPIFE pool kept as pre-specified sensitivity/ablation analyses"
+}

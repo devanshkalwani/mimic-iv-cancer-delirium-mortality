@@ -1,0 +1,6 @@
+comparison,mean_auc_diff,p_value
+SoftVoting: primary vs no-TPIFE,0.0079,0.1542
+SoftVoting: with measurement vs primary,-0.0004,0.9333
+SoftVoting vs Stacking,-0.0043,0.0921
+SoftVoting vs SOFA,0.1778,0.0
+SoftVoting vs APACHE-II,0.2117,0.0

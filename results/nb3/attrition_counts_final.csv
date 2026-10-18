@@ -1,0 +1,9 @@
+stage,n
+"Cancer-positive admissions (2,052 ICD codes)",74503
+Delirium-positive admissions (ICD or CAM-ICU 4-feature),12309
+Cancer AND delirium admissions,4361
+Unique patients,3950
+"Patients with an ICU stay (first stay, age>=18)",3123
+After excluding missing ICU discharge time,3122
+After excluding death within 24h of ICU admission,3055
+After excluding ICU discharge within 24h (FINAL),2777

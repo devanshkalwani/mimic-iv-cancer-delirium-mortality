@@ -1,0 +1,51 @@
+section,check,result,detail
+0 setup,frozen NB1-NB3 files unchanged (md5 manifest),PASS,47 files
+1 cohort,"final cohort 2,777 patients / 1,060 deaths",PASS,2777 / 1060
+1 cohort,split file covers exactly the cohort,PASS,
+1 cohort,Table 1 patient counts = cohort (overall / survived / died),PASS,"2,777/1,717/1,060"
+1 cohort,Figure 1 final-cohort box = cohort,PASS,
+2 random_split,test patients = split file test patients,PASS,556
+2 random_split,test fingerprint equals the one locked in NB3,PASS,0a23991d2383
+2 random_split,outcome in predictions = cohort outcome,PASS,
+2 random_split,"all probabilities present and inside [0,1]",PASS,
+2 random_split,Venn-Abers p0 <= p1 and width = p1 - p0,PASS,
+2 random_split,AUROC + DeLong CI of all 19 models recomputed,PASS,[]
+2 random_split,Table 2 AUROC/AUPRC/Brier strings match recomputation,PASS,[]
+2 random_split,Table 2 nested-CV column = cv_summary.csv,PASS,[]
+2 random_split,headline AUROC/AUPRC/Brier/threshold metrics/E:O recomputed,PASS,
+2 random_split,calibration slope and intercept (statsmodels GLM vs original code),PASS,slope 0.8306 vs 0.8307; intercept 0.1070 vs 0.1070
+2 random_split,calibration_metrics.csv (Fig 3) final-model slope/Brier = headline,PASS,
+2 random_split,risk tier of every patient = locked rule applied to calibrated risk,PASS,
+2 random_split,'uncertain' flags = Venn-Abers interval crossing a tier cut-off,PASS,
+2 random_split,'uncertain at threshold' flags recomputed,PASS,
+2 random_split,Table 3 tier n / deaths / % uncertain recomputed,PASS,[]
+2 random_split,net benefit (NB3 file + decision-curve file) recomputed,PASS,[]
+2 random_split,pre-specified DeLong p-values recomputed (own DeLong),PASS,[]
+2 random_split,subgroup n / deaths / mean risk / AUROC recomputed,PASS,[]
+2 random_split,Table 6 (CAM-ICU+ by 24 h) counts / AUROC / sens / spec / DeLong / NB recomputed,PASS,[]
+2 random_split,post-hoc comparisons (cell 9) recomputed,PASS,[]
+2 temporal_split,test patients = split file test patients,PASS,1404
+2 temporal_split,test fingerprint equals the one locked in NB3,PASS,8a4eb81d4c96
+2 temporal_split,outcome in predictions = cohort outcome,PASS,
+2 temporal_split,"all probabilities present and inside [0,1]",PASS,
+2 temporal_split,Venn-Abers p0 <= p1 and width = p1 - p0,PASS,
+2 temporal_split,AUROC + DeLong CI of all 19 models recomputed,PASS,[]
+2 temporal_split,Table 2 AUROC/AUPRC/Brier strings match recomputation,PASS,[]
+2 temporal_split,Table 2 nested-CV column = cv_summary.csv,PASS,[]
+2 temporal_split,headline AUROC/AUPRC/Brier/threshold metrics/E:O recomputed,PASS,
+2 temporal_split,calibration slope and intercept (statsmodels GLM vs original code),PASS,slope 0.8669 vs 0.8667; intercept -0.0133 vs -0.0133
+2 temporal_split,calibration_metrics.csv (Fig 3) final-model slope/Brier = headline,PASS,
+2 temporal_split,risk tier of every patient = locked rule applied to calibrated risk,PASS,
+2 temporal_split,'uncertain' flags = Venn-Abers interval crossing a tier cut-off,PASS,
+2 temporal_split,'uncertain at threshold' flags recomputed,PASS,
+2 temporal_split,Table 3 tier n / deaths / % uncertain recomputed,PASS,[]
+2 temporal_split,net benefit (NB3 file + decision-curve file) recomputed,PASS,[]
+2 temporal_split,pre-specified DeLong p-values recomputed (own DeLong),PASS,[]
+2 temporal_split,subgroup n / deaths / mean risk / AUROC recomputed,PASS,[]
+2 temporal_split,Table 6 (CAM-ICU+ by 24 h) counts / AUROC / sens / spec / DeLong / NB recomputed,PASS,[]
+2 temporal_split,post-hoc comparisons (cell 9) recomputed,PASS,[]
+3 sample size,random_split: Riley criteria 1 and 3 recomputed (from rounded R2),PASS,crit1 1012 vs 1013; crit3 363 vs 363
+3 sample size,random_split: n_train and events match the split,PASS,
+3 sample size,temporal_split: Riley criteria 1 and 3 recomputed (from rounded R2),PASS,crit1 1295 vs 1297; crit3 363 vs 363
+3 sample size,temporal_split: n_train and events match the split,PASS,
+4 GCS paradox,M1 odds ratio refitted with GLM on the same complete cases,PASS,1.0301 vs 1.0301; n 2663 vs 2663

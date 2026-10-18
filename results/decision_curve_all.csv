@@ -1,0 +1,457 @@
+arm,model,threshold,net_benefit
+random_split,Final model (Soft-Voting),0.05,0.3492995077622113
+random_split,Final model (Soft-Voting),0.06,0.34367824889024956
+random_split,Final model (Soft-Voting),0.07,0.32851783089657305
+random_split,Final model (Soft-Voting),0.08,0.32311542070691274
+random_split,Final model (Soft-Voting),0.09,0.3175942762273698
+random_split,Final model (Soft-Voting),0.1,0.31075139888089526
+random_split,Final model (Soft-Voting),0.11,0.30525018187697034
+random_split,Final model (Soft-Voting),0.12,0.3003597122302158
+random_split,Final model (Soft-Voting),0.13,0.29467460514347144
+random_split,Final model (Soft-Voting),0.14,0.288857286264012
+random_split,Final model (Soft-Voting),0.15,0.28290308929327124
+random_split,Final model (Soft-Voting),0.16,0.27680712572798905
+random_split,Final model (Soft-Voting),0.17,0.2684840079743434
+random_split,Final model (Soft-Voting),0.18,0.26232672398666435
+random_split,Final model (Soft-Voting),0.19,0.2608579802824407
+random_split,Final model (Soft-Voting),0.2,0.25449640287769787
+random_split,Final model (Soft-Voting),0.21,0.249772334031509
+random_split,Final model (Soft-Voting),0.22,0.244927135214905
+random_split,Final model (Soft-Voting),0.23,0.23995608707838925
+random_split,Final model (Soft-Voting),0.24,0.2348542218856494
+random_split,Final model (Soft-Voting),0.25,0.22961630695443647
+random_split,Final model (Soft-Voting),0.26,0.2310421932724091
+random_split,Final model (Soft-Voting),0.27,0.22634768897211
+random_split,Final model (Soft-Voting),0.28,0.22152278177458035
+random_split,Final model (Soft-Voting),0.29,0.21656196169824704
+random_split,Final model (Soft-Voting),0.3,0.2114594039054471
+random_split,Final model (Soft-Voting),0.31,0.20620894588676886
+random_split,Final model (Soft-Voting),0.32,0.20080406263224715
+random_split,Final model (Soft-Voting),0.33,0.19590894448620205
+random_split,Final model (Soft-Voting),0.34,0.1933725746675387
+random_split,Final model (Soft-Voting),0.35,0.1892639734366353
+random_split,Final model (Soft-Voting),0.36,0.18502697841726623
+random_split,Final model (Soft-Voting),0.37,0.1806554756195044
+random_split,Final model (Soft-Voting),0.38,0.17614295660246
+random_split,Final model (Soft-Voting),0.39,0.17148248614223377
+random_split,Final model (Soft-Voting),0.4,0.16666666666666669
+random_split,Final model (Soft-Voting),0.41,0.16168759907328378
+random_split,Final model (Soft-Voting),0.42,0.12893822872736296
+random_split,Final model (Soft-Voting),0.43,0.12621481761958855
+random_split,Final model (Soft-Voting),0.44,0.12204522096608428
+random_split,Final model (Soft-Voting),0.45,0.11772400261608895
+random_split,Final model (Soft-Voting),0.46,0.11324273914201972
+random_split,Final model (Soft-Voting),0.47,0.11018732184064071
+random_split,Final model (Soft-Voting),0.48,0.10445489762036525
+random_split,Final model (Soft-Voting),0.49,0.09997884045704614
+random_split,Final model (Soft-Voting),0.5,0.07553956834532374
+random_split,Final model (Soft-Voting),0.51,0.07124504478050211
+random_split,Final model (Soft-Voting),0.52,0.0686450839328537
+random_split,Final model (Soft-Voting),0.53,0.06593448645339046
+random_split,Final model (Soft-Voting),0.54,0.06310603690960273
+random_split,Final model (Soft-Voting),0.55,0.060151878497202216
+random_split,Final model (Soft-Voting),0.56,0.05706344015696531
+random_split,Final model (Soft-Voting),0.57,0.053831353521833714
+random_split,Final model (Soft-Voting),0.58,0.050445357999314835
+random_split,Final model (Soft-Voting),0.59,0.04689419196350238
+random_split,Final model (Soft-Voting),0.6,0.04316546762589929
+random_split,Final model (Soft-Voting),0.61,0.039245526655598606
+random_split,Final model (Soft-Voting),0.62,0.0351192730026505
+random_split,Final model (Soft-Voting),0.63,0.030769978611705218
+random_split,Final model (Soft-Voting),0.64,0.02877697841726619
+random_split,Final model (Soft-Voting),0.65,0.026207605344295996
+random_split,Final model (Soft-Voting),0.66,0.02348709267879813
+random_split,Final model (Soft-Voting),0.67,0.024253324613036836
+random_split,Final model (Soft-Voting),0.68,0.02135791366906474
+random_split,Final model (Soft-Voting),0.69,0.01827570201902995
+random_split,Final model (Soft-Voting),0.7,0.01378896882494006
+random_split,Final model (Soft-Voting),0.71,0.011721657157033008
+random_split,Final model (Soft-Voting),0.72,0.00950668036998973
+random_split,Final model (Soft-Voting),0.73,0.00712763122835066
+random_split,Final model (Soft-Voting),0.74,0.004565578306585508
+random_split,Final model (Soft-Voting),0.75,0.0017985611510791394
+random_split,Final model (Soft-Voting),0.76,-0.0011990407673860906
+random_split,Final model (Soft-Voting),0.77,-0.005004691898654996
+random_split,Final model (Soft-Voting),0.78,-0.009646827992151746
+random_split,Final model (Soft-Voting),0.79,-0.01276121959575198
+random_split,Final model (Soft-Voting),0.8,-0.016187050359712254
+random_split,SOFA,0.05,0.34873154108292315
+random_split,SOFA,0.06,0.3418031532221032
+random_split,SOFA,0.07,0.3347257677728785
+random_split,SOFA,0.08,0.3274945261182359
+random_split,SOFA,0.09,0.32010435607557913
+random_split,SOFA,0.1,0.31254996003197444
+random_split,SOFA,0.11,0.3048258022795247
+random_split,SOFA,0.12,0.2969260954872466
+random_split,SOFA,0.13,0.28884478623997356
+random_split,SOFA,0.14,0.28057553956834536
+random_split,SOFA,0.15,0.27211172238679643
+random_split,SOFA,0.16,0.263446385748544
+random_split,SOFA,0.17,0.2545722458178036
+random_split,SOFA,0.18,0.24548166344972805
+random_split,SOFA,0.19,0.23616662225774937
+random_split,SOFA,0.2,0.22661870503597123
+random_split,SOFA,0.21,0.21682906839085694
+random_split,SOFA,0.22,0.20678841542150897
+random_split,SOFA,0.23,0.19648696627113896
+random_split,SOFA,0.24,0.18591442635365393
+random_split,SOFA,0.25,0.1750599520383693
+random_split,SOFA,0.26,0.16391211355240132
+random_split,SOFA,0.27,0.15245885483394106
+random_split,SOFA,0.28,0.14058752997601914
+random_split,SOFA,0.29,0.1286857837673523
+random_split,SOFA,0.3,0.11819116135662897
+random_split,SOFA,0.31,0.1112240642268793
+random_split,SOFA,0.32,0.10114261531950905
+random_split,SOFA,0.33,0.09932352625362392
+random_split,SOFA,0.34,0.09532374100719421
+random_split,SOFA,0.35,0.08702268954067516
+random_split,SOFA,0.36,0.06744604316546762
+random_split,SOFA,0.37,0.059952038369304544
+random_split,SOFA,0.38,0.03150382919470876
+random_split,SOFA,0.39,0.024560679325392132
+random_split,SOFA,0.4,0.03477218225419662
+random_split,SOFA,0.41,0.028776978417266202
+random_split,SOFA,0.42,0.022761101463656674
+random_split,SOFA,0.43,0.007572889057175333
+random_split,SOFA,0.44,0.0038540596094552987
+random_split,SOFA,0.45,-0.0037606278613472738
+random_split,SOFA,0.46,-0.006727950972555283
+random_split,SOFA,0.47,0.0011198588299172058
+random_split,SOFA,0.48,-0.0009684560044272289
+random_split,SOFA,0.49,0.0032797291578501864
+random_split,SOFA,0.5,0.0017985611510791324
+random_split,SOFA,0.51,-0.004991924827484954
+random_split,SOFA,0.52,-0.006444844124700245
+random_split,SOFA,0.53,-0.006122761365375786
+random_split,SOFA,0.54,-0.0070378479824835805
+random_split,SOFA,0.55,0.0007993605115907253
+random_split,SOFA,0.56,0.0001635055591890089
+random_split,SOFA,0.57,-0.004140873347833358
+random_split,SOFA,0.58,-0.004539225762247345
+random_split,SOFA,0.59,-0.0033777855764169145
+random_split,SOFA,0.6,-0.0035971223021582727
+random_split,SOFA,0.61,0.0
+random_split,SOFA,0.62,0.0
+random_split,SOFA,0.63,0.0
+random_split,SOFA,0.64,0.0
+random_split,SOFA,0.65,0.0
+random_split,SOFA,0.66,0.0
+random_split,SOFA,0.67,0.0
+random_split,SOFA,0.68,0.0
+random_split,SOFA,0.69,0.0
+random_split,SOFA,0.7,0.0
+random_split,SOFA,0.71,0.0
+random_split,SOFA,0.72,0.0
+random_split,SOFA,0.73,0.0
+random_split,SOFA,0.74,0.0
+random_split,SOFA,0.75,0.0
+random_split,SOFA,0.76,0.0
+random_split,SOFA,0.77,0.0
+random_split,SOFA,0.78,0.0
+random_split,SOFA,0.79,0.0
+random_split,SOFA,0.8,0.0
+random_split,APACHE II,0.05,0.34873154108292315
+random_split,APACHE II,0.06,0.3418031532221032
+random_split,APACHE II,0.07,0.3347257677728785
+random_split,APACHE II,0.08,0.3274945261182359
+random_split,APACHE II,0.09,0.32010435607557913
+random_split,APACHE II,0.1,0.31254996003197444
+random_split,APACHE II,0.11,0.3048258022795247
+random_split,APACHE II,0.12,0.2969260954872466
+random_split,APACHE II,0.13,0.28884478623997356
+random_split,APACHE II,0.14,0.28057553956834536
+random_split,APACHE II,0.15,0.27211172238679643
+random_split,APACHE II,0.16,0.263446385748544
+random_split,APACHE II,0.17,0.2545722458178036
+random_split,APACHE II,0.18,0.24548166344972805
+random_split,APACHE II,0.19,0.23616662225774937
+random_split,APACHE II,0.2,0.22661870503597123
+random_split,APACHE II,0.21,0.21682906839085694
+random_split,APACHE II,0.22,0.20678841542150897
+random_split,APACHE II,0.23,0.19648696627113896
+random_split,APACHE II,0.24,0.18591442635365393
+random_split,APACHE II,0.25,0.1750599520383693
+random_split,APACHE II,0.26,0.16391211355240132
+random_split,APACHE II,0.27,0.15245885483394106
+random_split,APACHE II,0.28,0.14068745003996802
+random_split,APACHE II,0.29,0.12858445637855914
+random_split,APACHE II,0.3,0.11382322713257964
+random_split,APACHE II,0.31,0.09881659889479716
+random_split,APACHE II,0.32,0.09236140499365209
+random_split,APACHE II,0.33,0.07594223128959515
+random_split,APACHE II,0.34,0.07444953128406356
+random_split,APACHE II,0.35,0.06308799114554514
+random_split,APACHE II,0.36,0.057891187050359755
+random_split,APACHE II,0.37,0.042423204293707856
+random_split,APACHE II,0.38,0.04537015548851242
+random_split,APACHE II,0.39,0.03072296261351576
+random_split,APACHE II,0.4,0.020383693045563533
+random_split,APACHE II,0.41,0.01057797829532986
+random_split,APACHE II,0.42,-0.0013024063507814376
+random_split,APACHE II,0.43,-0.002114098195128096
+random_split,APACHE II,0.44,-0.011305241521068855
+random_split,APACHE II,0.45,-0.009156311314584695
+random_split,APACHE II,0.46,-0.0034638955502264875
+random_split,APACHE II,0.47,0.0014252748744400714
+random_split,APACHE II,0.48,0.0006917542888765903
+random_split,APACHE II,0.49,0.00014106361969248166
+random_split,APACHE II,0.5,0.0017985611510791368
+random_split,APACHE II,0.51,0.0
+random_split,APACHE II,0.52,0.0
+random_split,APACHE II,0.53,0.0
+random_split,APACHE II,0.54,0.0
+random_split,APACHE II,0.55,0.0
+random_split,APACHE II,0.56,0.0
+random_split,APACHE II,0.57,0.0
+random_split,APACHE II,0.58,0.0
+random_split,APACHE II,0.59,0.0
+random_split,APACHE II,0.6,0.0
+random_split,APACHE II,0.61,0.0
+random_split,APACHE II,0.62,0.0
+random_split,APACHE II,0.63,0.0
+random_split,APACHE II,0.64,0.0
+random_split,APACHE II,0.65,0.0
+random_split,APACHE II,0.66,0.0
+random_split,APACHE II,0.67,0.0
+random_split,APACHE II,0.68,0.0
+random_split,APACHE II,0.69,0.0
+random_split,APACHE II,0.7,0.0
+random_split,APACHE II,0.71,0.0
+random_split,APACHE II,0.72,0.0
+random_split,APACHE II,0.73,0.0
+random_split,APACHE II,0.74,0.0
+random_split,APACHE II,0.75,0.0
+random_split,APACHE II,0.76,0.0
+random_split,APACHE II,0.77,0.0
+random_split,APACHE II,0.78,0.0
+random_split,APACHE II,0.79,0.0
+random_split,APACHE II,0.8,0.0
+temporal_split,Final model (Soft-Voting),0.05,0.34979007347428404
+temporal_split,Final model (Soft-Voting),0.06,0.3429866036249015
+temporal_split,Final model (Soft-Voting),0.07,0.3360368225959624
+temporal_split,Final model (Soft-Voting),0.08,0.32357859531772576
+temporal_split,Final model (Soft-Voting),0.09,0.3172489903259134
+temporal_split,Final model (Soft-Voting),0.1,0.31077872744539414
+temporal_split,Final model (Soft-Voting),0.11,0.3041630653990205
+temporal_split,Final model (Soft-Voting),0.12,0.2973970473970474
+temporal_split,Final model (Soft-Voting),0.13,0.2904754887513508
+temporal_split,Final model (Soft-Voting),0.14,0.2833929636255218
+temporal_split,Final model (Soft-Voting),0.15,0.2761437908496732
+temporal_split,Final model (Soft-Voting),0.16,0.2668905168905169
+temporal_split,Final model (Soft-Voting),0.17,0.2620481927710843
+temporal_split,Final model (Soft-Voting),0.18,0.25708776318532417
+temporal_split,Final model (Soft-Voting),0.19,0.2520048538567057
+temporal_split,Final model (Soft-Voting),0.2,0.24679487179487178
+temporal_split,Final model (Soft-Voting),0.21,0.24116448483537095
+temporal_split,Final model (Soft-Voting),0.22,0.23575498575498577
+temporal_split,Final model (Soft-Voting),0.23,0.23020498020498023
+temporal_split,Final model (Soft-Voting),0.24,0.22379667116509222
+temporal_split,Final model (Soft-Voting),0.25,0.21771130104463438
+temporal_split,Final model (Soft-Voting),0.26,0.21192346192346193
+temporal_split,Final model (Soft-Voting),0.27,0.20597705186746285
+temporal_split,Final model (Soft-Voting),0.28,0.19891579613801835
+temporal_split,Final model (Soft-Voting),0.29,0.19455479314634247
+temporal_split,Final model (Soft-Voting),0.3,0.1900691900691901
+temporal_split,Final model (Soft-Voting),0.31,0.18545356951154054
+temporal_split,Final model (Soft-Voting),0.32,0.18070219540807775
+temporal_split,Final model (Soft-Voting),0.33,0.17580898924182506
+temporal_split,Final model (Soft-Voting),0.34,0.17076750410083744
+temporal_split,Final model (Soft-Voting),0.35,0.16557089634012714
+temporal_split,Final model (Soft-Voting),0.36,0.1602118945868946
+temporal_split,Final model (Soft-Voting),0.37,0.15468276579387694
+temporal_split,Final model (Soft-Voting),0.38,0.1489752780075361
+temporal_split,Final model (Soft-Voting),0.39,0.14308065947410212
+temporal_split,Final model (Soft-Voting),0.4,0.13698955365622031
+temporal_split,Final model (Soft-Voting),0.41,0.1369452894876624
+temporal_split,Final model (Soft-Voting),0.42,0.1322575891541409
+temporal_split,Final model (Soft-Voting),0.43,0.12689308741940325
+temporal_split,Final model (Soft-Voting),0.44,0.12133699633699638
+temporal_split,Final model (Soft-Voting),0.45,0.1155788655788656
+temporal_split,Final model (Soft-Voting),0.46,0.10960747071858185
+temporal_split,Final model (Soft-Voting),0.47,0.10341074020319305
+temporal_split,Final model (Soft-Voting),0.48,0.09697567389875086
+temporal_split,Final model (Soft-Voting),0.49,0.09028825205295793
+temporal_split,Final model (Soft-Voting),0.5,0.08333333333333334
+temporal_split,Final model (Soft-Voting),0.51,0.07609454038025468
+temporal_split,Final model (Soft-Voting),0.52,0.08244301994301995
+temporal_split,Final model (Soft-Voting),0.53,0.08007516518154817
+temporal_split,Final model (Soft-Voting),0.54,0.07760436021305586
+temporal_split,Final model (Soft-Voting),0.55,0.07502374169040836
+temporal_split,Final model (Soft-Voting),0.56,0.07232582232582233
+temporal_split,Final model (Soft-Voting),0.57,0.06950241833962767
+temporal_split,Final model (Soft-Voting),0.58,0.06752815086148421
+temporal_split,Final model (Soft-Voting),0.59,0.06446737544298521
+temporal_split,Final model (Soft-Voting),0.6,0.06125356125356127
+temporal_split,Final model (Soft-Voting),0.61,0.05787493608006429
+temporal_split,Final model (Soft-Voting),0.62,0.05431848852901486
+temporal_split,Final model (Soft-Voting),0.63,0.05056980056980058
+temporal_split,Final model (Soft-Voting),0.64,0.046612852168407715
+temporal_split,Final model (Soft-Voting),0.65,0.04242979242979243
+temporal_split,Final model (Soft-Voting),0.66,0.038000670353611515
+temporal_split,Final model (Soft-Voting),0.67,0.03330311663644997
+temporal_split,Final model (Soft-Voting),0.68,0.03276353276353275
+temporal_split,Final model (Soft-Voting),0.69,0.031040345556474586
+temporal_split,Final model (Soft-Voting),0.7,0.029202279202279198
+temporal_split,Final model (Soft-Voting),0.71,0.02723744965124275
+temporal_split,Final model (Soft-Voting),0.72,0.02513227513227513
+temporal_split,Final model (Soft-Voting),0.73,0.02287116176005065
+temporal_split,Final model (Soft-Voting),0.74,0.020436116589962736
+temporal_split,Final model (Soft-Voting),0.75,0.017806267806267796
+temporal_split,Final model (Soft-Voting),0.76,0.014957264957264946
+temporal_split,Final model (Soft-Voting),0.77,0.011860522730087926
+temporal_split,Final model (Soft-Voting),0.78,0.008482258482258455
+temporal_split,Final model (Soft-Voting),0.79,0.004782254782254761
+temporal_split,Final model (Soft-Voting),0.8,0.0007122507122506866
+temporal_split,SOFA,0.05,0.34922777028040186
+temporal_split,SOFA,0.06,0.3423046614535976
+temporal_split,SOFA,0.07,0.3352326685660019
+temporal_split,SOFA,0.08,0.3280069367025889
+temporal_split,SOFA,0.09,0.3206223975454745
+temporal_split,SOFA,0.1,0.313073757518202
+temporal_split,SOFA,0.11,0.30535548513076605
+temporal_split,SOFA,0.12,0.29746179746179746
+temporal_split,SOFA,0.13,0.2893866457084848
+temporal_split,SOFA,0.14,0.2811236997283509
+temporal_split,SOFA,0.15,0.2726663314898609
+temporal_split,SOFA,0.16,0.26400759734093066
+temporal_split,SOFA,0.17,0.25514021899564066
+temporal_split,SOFA,0.18,0.2460565631297339
+temporal_split,SOFA,0.19,0.23674861946466888
+temporal_split,SOFA,0.2,0.22720797720797722
+temporal_split,SOFA,0.21,0.21742579970428075
+temporal_split,SOFA,0.22,0.20739279713638692
+temporal_split,SOFA,0.23,0.19709919709919713
+temporal_split,SOFA,0.24,0.18653471285050235
+temporal_split,SOFA,0.25,0.17568850902184238
+temporal_split,SOFA,0.26,0.16454916454916457
+temporal_split,SOFA,0.27,0.15310463255668735
+temporal_split,SOFA,0.28,0.14059037670148783
+temporal_split,SOFA,0.29,0.13129489185827217
+temporal_split,SOFA,0.3,0.12606837606837606
+temporal_split,SOFA,0.31,0.10739502043849872
+temporal_split,SOFA,0.32,0.09728506787330315
+temporal_split,SOFA,0.33,0.08464089807373382
+temporal_split,SOFA,0.34,0.07528274194940854
+temporal_split,SOFA,0.35,0.07390970852509318
+temporal_split,SOFA,0.36,0.05702457264957267
+temporal_split,SOFA,0.37,0.04955229955229956
+temporal_split,SOFA,0.38,0.04236742946420366
+temporal_split,SOFA,0.39,0.03577600298911773
+temporal_split,SOFA,0.4,0.033713200379867
+temporal_split,SOFA,0.41,0.03702496499106672
+temporal_split,SOFA,0.42,0.0325916101778171
+temporal_split,SOFA,0.43,0.0360373869145799
+temporal_split,SOFA,0.44,0.03271265771265772
+temporal_split,SOFA,0.45,0.02421652421652422
+temporal_split,SOFA,0.46,0.021578558615595655
+temporal_split,SOFA,0.47,0.01096597323012418
+temporal_split,SOFA,0.48,0.010902914749068598
+temporal_split,SOFA,0.49,0.009398916261661366
+temporal_split,SOFA,0.5,0.010683760683760687
+temporal_split,SOFA,0.51,0.009637188208616785
+temporal_split,SOFA,0.52,0.00949667616334283
+temporal_split,SOFA,0.53,0.008865248226950354
+temporal_split,SOFA,0.54,0.007772822990214293
+temporal_split,SOFA,0.55,0.007359924026590692
+temporal_split,SOFA,0.56,0.002525252525252524
+temporal_split,SOFA,0.57,0.0028655668190551917
+temporal_split,SOFA,0.58,0.0027472527472527475
+temporal_split,SOFA,0.59,0.0
+temporal_split,SOFA,0.6,0.0
+temporal_split,SOFA,0.61,0.0
+temporal_split,SOFA,0.62,0.0
+temporal_split,SOFA,0.63,0.0
+temporal_split,SOFA,0.64,0.0
+temporal_split,SOFA,0.65,0.0
+temporal_split,SOFA,0.66,0.0
+temporal_split,SOFA,0.67,0.0
+temporal_split,SOFA,0.68,0.0
+temporal_split,SOFA,0.69,0.0
+temporal_split,SOFA,0.7,0.0
+temporal_split,SOFA,0.71,0.0
+temporal_split,SOFA,0.72,0.0
+temporal_split,SOFA,0.73,0.0
+temporal_split,SOFA,0.74,0.0
+temporal_split,SOFA,0.75,0.0
+temporal_split,SOFA,0.76,0.0
+temporal_split,SOFA,0.77,0.0
+temporal_split,SOFA,0.78,0.0
+temporal_split,SOFA,0.79,0.0
+temporal_split,SOFA,0.8,0.0
+temporal_split,APACHE II,0.05,0.34922777028040186
+temporal_split,APACHE II,0.06,0.3423046614535976
+temporal_split,APACHE II,0.07,0.3352326685660019
+temporal_split,APACHE II,0.08,0.3280069367025889
+temporal_split,APACHE II,0.09,0.3206223975454745
+temporal_split,APACHE II,0.1,0.313073757518202
+temporal_split,APACHE II,0.11,0.30535548513076605
+temporal_split,APACHE II,0.12,0.29746179746179746
+temporal_split,APACHE II,0.13,0.2893866457084848
+temporal_split,APACHE II,0.14,0.2811236997283509
+temporal_split,APACHE II,0.15,0.2726663314898609
+temporal_split,APACHE II,0.16,0.26400759734093066
+temporal_split,APACHE II,0.17,0.25514021899564066
+temporal_split,APACHE II,0.18,0.2460565631297339
+temporal_split,APACHE II,0.19,0.23674861946466888
+temporal_split,APACHE II,0.2,0.22720797720797722
+temporal_split,APACHE II,0.21,0.21742579970428075
+temporal_split,APACHE II,0.22,0.20739279713638692
+temporal_split,APACHE II,0.23,0.19709919709919713
+temporal_split,APACHE II,0.24,0.18653471285050235
+temporal_split,APACHE II,0.25,0.17568850902184238
+temporal_split,APACHE II,0.26,0.16454916454916457
+temporal_split,APACHE II,0.27,0.15310463255668735
+temporal_split,APACHE II,0.28,0.14134219689775246
+temporal_split,APACHE II,0.29,0.12924842502307293
+temporal_split,APACHE II,0.3,0.11680911680911682
+temporal_split,APACHE II,0.31,0.1040092489367852
+temporal_split,APACHE II,0.32,0.09405899111781463
+temporal_split,APACHE II,0.33,0.08027171833141977
+temporal_split,APACHE II,0.34,0.07424674091340755
+temporal_split,APACHE II,0.35,0.07807363576594345
+temporal_split,APACHE II,0.36,0.06307870370370366
+temporal_split,APACHE II,0.37,0.03892506670284446
+temporal_split,APACHE II,0.38,0.03995496737432219
+temporal_split,APACHE II,0.39,0.014606977721731834
+temporal_split,APACHE II,0.4,0.01780626780626779
+temporal_split,APACHE II,0.41,0.005432420686658002
+temporal_split,APACHE II,0.42,0.0019893899204244114
+temporal_split,APACHE II,0.43,0.0040735742490128485
+temporal_split,APACHE II,0.44,0.007783882783882784
+temporal_split,APACHE II,0.45,0.006475006475006475
+temporal_split,APACHE II,0.46,0.0011607048644085684
+temporal_split,APACHE II,0.47,0.0
+temporal_split,APACHE II,0.48,0.0
+temporal_split,APACHE II,0.49,0.0
+temporal_split,APACHE II,0.5,0.0
+temporal_split,APACHE II,0.51,0.0
+temporal_split,APACHE II,0.52,0.0
+temporal_split,APACHE II,0.53,0.0
+temporal_split,APACHE II,0.54,0.0
+temporal_split,APACHE II,0.55,0.0
+temporal_split,APACHE II,0.56,0.0
+temporal_split,APACHE II,0.57,0.0
+temporal_split,APACHE II,0.58,0.0
+temporal_split,APACHE II,0.59,0.0
+temporal_split,APACHE II,0.6,0.0
+temporal_split,APACHE II,0.61,0.0
+temporal_split,APACHE II,0.62,0.0
+temporal_split,APACHE II,0.63,0.0
+temporal_split,APACHE II,0.64,0.0
+temporal_split,APACHE II,0.65,0.0
+temporal_split,APACHE II,0.66,0.0
+temporal_split,APACHE II,0.67,0.0
+temporal_split,APACHE II,0.68,0.0
+temporal_split,APACHE II,0.69,0.0
+temporal_split,APACHE II,0.7,0.0
+temporal_split,APACHE II,0.71,0.0
+temporal_split,APACHE II,0.72,0.0
+temporal_split,APACHE II,0.73,0.0
+temporal_split,APACHE II,0.74,0.0
+temporal_split,APACHE II,0.75,0.0
+temporal_split,APACHE II,0.76,0.0
+temporal_split,APACHE II,0.77,0.0
+temporal_split,APACHE II,0.78,0.0
+temporal_split,APACHE II,0.79,0.0
+temporal_split,APACHE II,0.8,0.0

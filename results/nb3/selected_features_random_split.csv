@@ -1,0 +1,26 @@
+feature,votes,mean_abs_shap,family
+elix_metacanc,5,0.2458311732139024,comorbidity (Elixhauser)
+Temp_late_mean,5,0.2344765475465907,TPIFE stages 1-3
+Hematocrit_max,5,0.2002619041035323,basic temporal
+sofa_total,5,0.1800044372969471,severity score
+Lactate_min,5,0.1747783288299656,basic temporal
+elix_vw_chronic,5,0.1627328202003005,comorbidity (Elixhauser)
+SpO2_mean,5,0.1562343881410076,basic temporal
+GCS_Total_slope,5,0.1561448916261216,basic temporal
+age_at_admission,5,0.1528583292191408,demographics/cancer
+WBC_min,5,0.1443945207075168,basic temporal
+SBP_std,5,0.1382880561863752,basic temporal
+WBC_std,5,0.1369287291464983,basic temporal
+osbi_neurological,5,0.1351094601128701,organ burden (OSBI)
+Potassium_min,5,0.1343218938807993,basic temporal
+HR_mid_mean,5,0.1250069526347434,TPIFE stages 1-3
+tpife_mean_frac_abn,5,0.1219594344454072,TPIFE stage 4 (aggregation)
+weight_kg,5,0.1180275571423853,context
+HR_early_mean,5,0.1158938587371781,TPIFE stages 1-3
+apache_age_pts,5,0.0983955752297641,severity score
+GCS_Total_episodes_per24h,5,0.096867068864276,TPIFE stages 1-3
+Platelets_max,4,0.1425654141159844,basic temporal
+RR_auc_dev,4,0.0988118091233855,TPIFE stages 1-3
+HR_late_mean,3,0.1161465313059969,TPIFE stages 1-3
+SBP_last,3,0.11112997215126,basic temporal
+GCS_Total_std,3,0.1082806561143981,basic temporal

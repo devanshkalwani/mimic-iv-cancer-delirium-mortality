@@ -1,0 +1,89 @@
+{
+  "best_params": {
+    "LR": {
+      "C": 0.018048040120850567
+    },
+    "DT": {
+      "max_depth": 10,
+      "min_samples_leaf": 42
+    },
+    "RF": {
+      "n_estimators": 1300,
+      "max_depth": 15,
+      "min_samples_leaf": 5,
+      "max_features": "log2"
+    },
+    "XGB": {
+      "n_estimators": 1300,
+      "learning_rate": 0.016646989054757123,
+      "max_depth": 2,
+      "subsample": 0.786155181204659,
+      "colsample_bytree": 0.3432726665279314,
+      "min_child_weight": 17,
+      "reg_lambda": 0.4536055072269152
+    },
+    "CatBoost": {
+      "iterations": 1500,
+      "learning_rate": 0.005722963672700718,
+      "depth": 5,
+      "l2_leaf_reg": 6.638204542227929,
+      "bagging_temperature": 0.3300153611672051
+    },
+    "LightGBM": {
+      "n_estimators": 1700,
+      "learning_rate": 0.010261799081009527,
+      "num_leaves": 37,
+      "max_depth": 2,
+      "subsample": 0.6130049545573112,
+      "colsample_bytree": 0.5068819450150764,
+      "min_child_samples": 65
+    }
+  },
+  "imbalance_method": "class_weights",
+  "imbalance_check": {
+    "XGB": {
+      "class_weights": 0.7732,
+      "smoteenn": 0.7145
+    },
+    "LightGBM": {
+      "class_weights": 0.7733,
+      "smoteenn": 0.7236
+    }
+  },
+  "n_trials": 80,
+  "seed": 42,
+  "features": [
+    "elix_metacanc",
+    "elix_vw_chronic",
+    "weight_kg",
+    "tpife_mean_frac_abn",
+    "Lactate_min",
+    "WBC_min",
+    "sofa_total",
+    "Hematocrit_max",
+    "HR_delta",
+    "GCS_Total_slope",
+    "Temp_late_mean",
+    "Temp_max",
+    "RR_early_mean",
+    "shock_index_max",
+    "GCS_Total_std",
+    "GCS_Total_last",
+    "WBC_std",
+    "Potassium_mean",
+    "apache_age_pts",
+    "SBP_late_mean",
+    "SBP_mean",
+    "HR_late_mean",
+    "Lactate_last_state",
+    "MAP_delta",
+    "SBP_first_episode_h",
+    "age_at_admission",
+    "SBP_std",
+    "MAP_late_mean",
+    "stab_HR_arv",
+    "HR_early_mean",
+    "GCS_Total_episodes_per24h",
+    "Platelets_delta"
+  ]
+}

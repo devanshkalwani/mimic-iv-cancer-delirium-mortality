@@ -1,0 +1,9 @@
+# never commit MIMIC data, patient-level outputs or trained models
+data/
+models_v2/
+*.csv.gz
+*.joblib
+*.pkl
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store

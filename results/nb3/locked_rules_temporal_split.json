@@ -1,0 +1,7 @@
+{
+  "tier_cut_low": 0.225,
+  "tier_cut_high": 0.4999999999999999,
+  "threshold": 0.3682921803222532,
+  "tier_rule": "tertiles of training OOF calibrated risk",
+  "uncertain_rule": "Venn-Abers [p0,p1] crosses a tier cut-off"
+}

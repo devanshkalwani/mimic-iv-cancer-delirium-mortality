@@ -1,0 +1,13 @@
+arm,population,n,deaths,comparison,auc_final,auc_comparator,diff,diff_lo,diff_hi,p_delong,boot_share_final_better,p_holm_within_arm,analysis
+random_split,All test patients,556,212,Soft-Voting (uncalibrated) vs logistic regression,0.7734,0.7414,0.032,0.0111,0.0539,0.003852197520036775,1.0,0.019906962490153803,post-hoc (not pre-specified)
+random_split,All test patients,556,212,"Soft-Voting (calibrated, final) vs logistic regression",0.7736,0.7414,0.0321,0.0108,0.0541,0.004162384833294707,1.0,0.019906962490153803,post-hoc (not pre-specified)
+random_split,All test patients,556,212,Soft-Voting (uncalibrated) vs Multi-View,0.7734,0.7774,-0.0039,-0.0258,0.0173,0.7255619691234725,0.367,1.0,post-hoc (not pre-specified)
+random_split,CAM-ICU positive by 24 h,275,114,Soft-Voting (uncalibrated) vs logistic regression,0.8306,0.7887,0.042,0.0134,0.0722,0.004481155038221337,0.999,0.019906962490153803,post-hoc (not pre-specified)
+random_split,CAM-ICU positive by 24 h,275,114,"Soft-Voting (calibrated, final) vs logistic regression",0.8326,0.7887,0.0439,0.0148,0.0746,0.0033178270816923007,0.999,0.019906962490153803,post-hoc (not pre-specified)
+random_split,CAM-ICU positive by 24 h,275,114,Soft-Voting (uncalibrated) vs Multi-View,0.8306,0.837,-0.0064,-0.0369,0.0238,0.67282327963033,0.344,1.0,post-hoc (not pre-specified)
+temporal_split,All test patients,1404,536,Soft-Voting (uncalibrated) vs logistic regression,0.763,0.7753,-0.0123,-0.025,-0.0002,0.0595304917196007,0.024,0.2381219668784028,post-hoc (not pre-specified)
+temporal_split,All test patients,1404,536,"Soft-Voting (calibrated, final) vs logistic regression",0.7585,0.7753,-0.0168,-0.03,-0.004,0.01403881455661528,0.004,0.0828639476744884,post-hoc (not pre-specified)
+temporal_split,All test patients,1404,536,Soft-Voting (uncalibrated) vs Multi-View,0.763,0.774,-0.011,-0.0259,0.0038,0.152312225940742,0.081,0.24836229879074284,post-hoc (not pre-specified)
+temporal_split,CAM-ICU positive by 24 h,786,283,Soft-Voting (uncalibrated) vs logistic regression,0.8159,0.8298,-0.0139,-0.0301,0.0018,0.09066470191474015,0.041,0.24836229879074284,post-hoc (not pre-specified)
+temporal_split,CAM-ICU positive by 24 h,786,283,"Soft-Voting (calibrated, final) vs logistic regression",0.815,0.8298,-0.0148,-0.0315,0.0017,0.08278743293024761,0.042,0.24836229879074284,post-hoc (not pre-specified)
+temporal_split,CAM-ICU positive by 24 h,786,283,Soft-Voting (uncalibrated) vs Multi-View,0.8159,0.838,-0.0221,-0.0397,-0.005,0.013810657945748067,0.005,0.0828639476744884,post-hoc (not pre-specified)

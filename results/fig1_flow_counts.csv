@@ -1,0 +1,14 @@
+box,n,deaths
+Cancer admissions,74503,
+Cancer + delirium admissions,4361,
+Cancer + delirium patients,3950,
+"First ICU stay, age >=18",3123,
+Valid ICU discharge time,3122,
+Alive at 24 h,3055,
+Final cohort,2777,1060
+Random split - development,2221,848
+Random split - test,556,212
+"Random split - test, CAM-ICU+ by 24 h",275,114
+Temporal split - development (<=2017),1373,524
+Temporal split - test (>2017),1404,536
+"Temporal split - test, CAM-ICU+ by 24 h",786,283

@@ -1,0 +1,82 @@
+{
+  "best_params": {
+    "LR": {
+      "C": 1.5021275801396485
+    },
+    "DT": {
+      "max_depth": 6,
+      "min_samples_leaf": 47
+    },
+    "RF": {
+      "n_estimators": 900,
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "max_features": "log2"
+    },
+    "XGB": {
+      "n_estimators": 1400,
+      "learning_rate": 0.01219777211324965,
+      "max_depth": 3,
+      "subsample": 0.6222220586864845,
+      "colsample_bytree": 0.3680732376082875,
+      "min_child_weight": 1,
+      "reg_lambda": 0.14295355468616294
+    },
+    "CatBoost": {
+      "iterations": 1100,
+      "learning_rate": 0.009283146991924857,
+      "depth": 4,
+      "l2_leaf_reg": 19.086920468895226,
+      "bagging_temperature": 0.17035657982962535
+    },
+    "LightGBM": {
+      "n_estimators": 1300,
+      "learning_rate": 0.01651937160679371,
+      "num_leaves": 22,
+      "max_depth": 2,
+      "subsample": 0.4633949832154462,
+      "colsample_bytree": 0.36681783914158517,
+      "min_child_samples": 54
+    }
+  },
+  "imbalance_method": "class_weights",
+  "imbalance_check": {
+    "XGB": {
+      "class_weights": 0.7845,
+      "smoteenn": 0.7486
+    },
+    "LightGBM": {
+      "class_weights": 0.7848,
+      "smoteenn": 0.7511
+    }
+  },
+  "n_trials": 80,
+  "seed": 42,
+  "features": [
+    "elix_metacanc",
+    "Temp_late_mean",
+    "Hematocrit_max",
+    "sofa_total",
+    "Lactate_min",
+    "elix_vw_chronic",
+    "SpO2_mean",
+    "GCS_Total_slope",
+    "age_at_admission",
+    "WBC_min",
+    "SBP_std",
+    "WBC_std",
+    "osbi_neurological",
+    "Potassium_min",
+    "HR_mid_mean",
+    "tpife_mean_frac_abn",
+    "weight_kg",
+    "HR_early_mean",
+    "apache_age_pts",
+    "GCS_Total_episodes_per24h",
+    "Platelets_max",
+    "RR_auc_dev",
+    "HR_late_mean",
+    "SBP_last",
+    "GCS_Total_std"
+  ]
+}

@@ -1,0 +1,392 @@
+feature,n_unique,missing_pct,type,family,family_changed_from_step10,measurement_process_feature
+age_at_admission,79,0.0,numeric,demographics/cancer,False,False
+sex_male,2,0.0,binary,demographics/cancer,False,False
+cancer_type,5,0.0,categorical,demographics/cancer,False,False
+elix_aids,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_alcohol,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_blane,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_chf,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_cpd,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_dane,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_depre,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_drug,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_hypothy,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_ld,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_lymph,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_metacanc,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_obes,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_para,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_psycho,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_pud,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_pvd,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_rf,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_rheumd,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_solidtum,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_valv,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_vw_chronic,45,0.0,numeric,comorbidity (Elixhauser),False,False
+elix_diabetes,2,0.0,binary,comorbidity (Elixhauser),False,False
+elix_hypertension,2,0.0,binary,comorbidity (Elixhauser),False,False
+sofa_resp,5,43.8,numeric,severity score,False,False
+sofa_coag,5,0.5,numeric,severity score,False,False
+sofa_liver,5,31.2,numeric,severity score,False,False
+sofa_cardio,5,0.0,numeric,severity score,False,False
+sofa_cns,5,0.1,numeric,severity score,False,False
+sofa_renal,5,0.5,numeric,severity score,False,False
+sofa_total,23,0.0,numeric,severity score,False,False
+ap_temp,5,1.0,numeric,severity score,False,False
+ap_map,4,0.0,numeric,severity score,False,False
+ap_hr,4,0.0,numeric,severity score,False,False
+ap_rr,5,0.2,numeric,severity score,False,False
+ap_oxygenation,5,61.5,numeric,severity score,False,False
+ap_ph,5,45.7,numeric,severity score,False,False
+ap_sodium,5,0.4,numeric,severity score,False,False
+ap_potassium,5,0.4,numeric,severity score,False,False
+ap_creatinine,4,0.5,numeric,severity score,False,False
+ap_hct,4,0.5,numeric,severity score,False,False
+ap_wbc,4,0.8,numeric,severity score,False,False
+ap_gcs,13,0.1,numeric,severity score,False,False
+apache_aps,42,0.0,numeric,severity score,False,False
+apache_age_pts,5,0.0,numeric,severity score,False,False
+apache_chronic_pts,2,0.0,binary,severity score,False,False
+apache_ii_total,51,0.0,numeric,severity score,False,False
+weight_kg,786,0.3,numeric,context,False,False
+gcs_verbal_ETT_24h,2,0.0,binary,context,False,False
+Creatinine_n,10,0.5,numeric,basic temporal,False,True
+Creatinine_mean,552,0.5,numeric,basic temporal,False,False
+Creatinine_min,84,0.5,numeric,basic temporal,False,False
+Creatinine_max,97,0.5,numeric,basic temporal,False,False
+Creatinine_std,500,11.1,numeric,basic temporal,False,False
+Creatinine_first,94,0.5,numeric,basic temporal,False,False
+Creatinine_last,87,0.5,numeric,basic temporal,False,False
+Creatinine_delta,165,11.1,numeric,basic temporal,False,False
+Creatinine_slope,1580,43.1,numeric,basic temporal,False,False
+Creatinine_ever_abn,2,0.5,binary,TPIFE stages 1-3,False,False
+Creatinine_ever_severe,2,0.5,binary,TPIFE stages 1-3,False,False
+Creatinine_last_state,3,0.5,numeric,TPIFE stages 1-3,False,False
+GCS_Total_n,31,0.1,numeric,basic temporal,False,True
+GCS_Total_mean,490,0.1,numeric,basic temporal,False,False
+GCS_Total_min,13,0.1,numeric,basic temporal,False,False
+GCS_Total_max,13,0.1,numeric,basic temporal,False,False
+GCS_Total_std,887,0.3,numeric,basic temporal,False,False
+GCS_Total_first,13,0.1,numeric,basic temporal,False,False
+GCS_Total_last,13,0.1,numeric,basic temporal,False,False
+GCS_Total_delta,25,0.3,numeric,basic temporal,False,False
+GCS_Total_slope,2738,1.2,numeric,basic temporal,False,False
+GCS_Total_obs_hours,2073,0.1,numeric,basic temporal,True,True
+GCS_Total_frac_abn,848,0.1,numeric,TPIFE stages 1-3,False,False
+GCS_Total_frac_severe,997,0.1,numeric,TPIFE stages 1-3,False,False
+GCS_Total_auc_dev,1649,0.1,numeric,TPIFE stages 1-3,False,False
+GCS_Total_transitions_per24h,1127,0.1,numeric,TPIFE stages 1-3,False,False
+GCS_Total_episodes_per24h,1426,0.1,numeric,TPIFE stages 1-3,False,False
+GCS_Total_longest_episode_h,1252,0.1,numeric,TPIFE stages 1-3,False,False
+GCS_Total_first_episode_h,1188,0.1,numeric,TPIFE stages 1-3,False,False
+GCS_Total_unresolved,2,0.1,binary,TPIFE stages 1-3,False,False
+GCS_Total_early_mean,963,3.3,numeric,TPIFE stages 1-3,True,False
+GCS_Total_mid_mean,1245,0.4,numeric,TPIFE stages 1-3,True,False
+GCS_Total_late_mean,1678,0.2,numeric,TPIFE stages 1-3,True,False
+GCS_Total_late_minus_early_mean,1976,3.5,numeric,TPIFE stages 1-3,True,False
+GCS_Total_deterioration,620,3.5,numeric,TPIFE stages 1-3,False,False
+HR_n,84,0.0,numeric,basic temporal,False,True
+HR_mean,2479,0.0,numeric,basic temporal,False,False
+HR_min,101,0.0,numeric,basic temporal,False,False
+HR_max,131,0.0,numeric,basic temporal,False,False
+HR_std,2766,0.0,numeric,basic temporal,False,False
+HR_first,131,0.0,numeric,basic temporal,False,False
+HR_last,111,0.0,numeric,basic temporal,False,False
+HR_delta,148,0.0,numeric,basic temporal,False,False
+HR_slope,2776,0.0,numeric,basic temporal,False,False
+HR_obs_hours,1656,0.0,numeric,basic temporal,True,True
+HR_frac_abn,1964,0.0,numeric,TPIFE stages 1-3,False,False
+HR_frac_severe,553,0.0,numeric,TPIFE stages 1-3,False,False
+HR_auc_dev,2181,0.0,numeric,TPIFE stages 1-3,False,False
+HR_transitions_per24h,1836,0.0,numeric,TPIFE stages 1-3,False,False
+HR_episodes_per24h,1733,0.0,numeric,TPIFE stages 1-3,False,False
+HR_longest_episode_h,1104,0.0,numeric,TPIFE stages 1-3,False,False
+HR_first_episode_h,1020,0.0,numeric,TPIFE stages 1-3,False,False
+HR_unresolved,2,0.0,binary,TPIFE stages 1-3,False,False
+HR_early_mean,2754,0.6,numeric,TPIFE stages 1-3,True,False
+HR_mid_mean,2727,0.1,numeric,TPIFE stages 1-3,True,False
+HR_late_mean,2761,0.0,numeric,TPIFE stages 1-3,True,False
+HR_late_minus_early_mean,2758,0.6,numeric,TPIFE stages 1-3,True,False
+HR_deterioration,1634,0.6,numeric,TPIFE stages 1-3,False,False
+Hematocrit_n,25,0.5,numeric,basic temporal,False,True
+Hematocrit_mean,1577,0.5,numeric,basic temporal,False,False
+Hematocrit_min,341,0.5,numeric,basic temporal,False,False
+Hematocrit_max,323,0.5,numeric,basic temporal,False,False
+Hematocrit_std,1757,12.1,numeric,basic temporal,False,False
+Hematocrit_first,363,0.5,numeric,basic temporal,False,False
+Hematocrit_last,298,0.5,numeric,basic temporal,False,False
+Hematocrit_delta,521,12.1,numeric,basic temporal,False,False
+Hematocrit_slope,1612,42.0,numeric,basic temporal,False,False
+Hematocrit_ever_abn,2,0.5,binary,TPIFE stages 1-3,False,False
+Hematocrit_ever_severe,2,0.5,binary,TPIFE stages 1-3,False,False
+Hematocrit_last_state,3,0.5,numeric,TPIFE stages 1-3,False,False
+MAP_n,89,0.0,numeric,basic temporal,False,True
+MAP_mean,2394,0.0,numeric,basic temporal,False,False
+MAP_min,96,0.0,numeric,basic temporal,False,False
+MAP_max,138,0.0,numeric,basic temporal,False,False
+MAP_std,2771,0.0,numeric,basic temporal,False,False
+MAP_first,133,0.0,numeric,basic temporal,False,False
+MAP_last,125,0.0,numeric,basic temporal,False,False
+MAP_delta,168,0.0,numeric,basic temporal,False,False
+MAP_slope,2776,0.0,numeric,basic temporal,False,False
+MAP_obs_hours,1716,0.0,numeric,basic temporal,True,True
+MAP_frac_abn,2363,0.0,numeric,TPIFE stages 1-3,False,False
+MAP_frac_severe,1133,0.0,numeric,TPIFE stages 1-3,False,False
+MAP_auc_dev,2396,0.0,numeric,TPIFE stages 1-3,False,False
+MAP_transitions_per24h,2160,0.0,numeric,TPIFE stages 1-3,False,False
+MAP_episodes_per24h,2017,0.0,numeric,TPIFE stages 1-3,False,False
+MAP_longest_episode_h,807,0.0,numeric,TPIFE stages 1-3,False,False
+MAP_first_episode_h,698,0.0,numeric,TPIFE stages 1-3,False,False
+MAP_unresolved,2,0.0,binary,TPIFE stages 1-3,False,False
+MAP_early_mean,2754,0.7,numeric,TPIFE stages 1-3,True,False
+MAP_mid_mean,2743,0.1,numeric,TPIFE stages 1-3,True,False
+MAP_late_mean,2762,0.0,numeric,TPIFE stages 1-3,True,False
+MAP_late_minus_early_mean,2757,0.7,numeric,TPIFE stages 1-3,True,False
+MAP_deterioration,2088,0.7,numeric,TPIFE stages 1-3,False,False
+Platelets_n,16,0.5,numeric,basic temporal,False,True
+Platelets_mean,1540,0.5,numeric,basic temporal,False,False
+Platelets_min,477,0.5,numeric,basic temporal,False,False
+Platelets_max,553,0.5,numeric,basic temporal,False,False
+Platelets_std,1342,13.9,numeric,basic temporal,False,False
+Platelets_first,531,0.5,numeric,basic temporal,False,False
+Platelets_last,494,0.5,numeric,basic temporal,False,False
+Platelets_delta,288,13.9,numeric,basic temporal,False,False
+Platelets_slope,1405,49.4,numeric,basic temporal,False,False
+Platelets_ever_abn,2,0.5,binary,TPIFE stages 1-3,False,False
+Platelets_ever_severe,2,0.5,binary,TPIFE stages 1-3,False,False
+Platelets_last_state,3,0.5,numeric,TPIFE stages 1-3,False,False
+Potassium_n,19,0.4,numeric,basic temporal,False,True
+Potassium_mean,718,0.4,numeric,basic temporal,False,False
+Potassium_min,59,0.4,numeric,basic temporal,False,False
+Potassium_max,82,0.4,numeric,basic temporal,False,False
+Potassium_std,1256,9.0,numeric,basic temporal,False,False
+Potassium_first,94,0.4,numeric,basic temporal,False,False
+Potassium_last,58,0.4,numeric,basic temporal,False,False
+Potassium_delta,185,9.0,numeric,basic temporal,False,False
+Potassium_slope,1857,33.1,numeric,basic temporal,False,False
+Potassium_ever_abn,2,0.4,binary,TPIFE stages 1-3,False,False
+Potassium_ever_severe,2,0.4,binary,TPIFE stages 1-3,False,False
+Potassium_last_state,3,0.4,numeric,TPIFE stages 1-3,False,False
+RR_n,86,0.2,numeric,basic temporal,False,True
+RR_mean,2147,0.2,numeric,basic temporal,False,False
+RR_min,35,0.2,numeric,basic temporal,False,False
+RR_max,66,0.2,numeric,basic temporal,False,False
+RR_std,2741,0.2,numeric,basic temporal,False,False
+RR_first,63,0.2,numeric,basic temporal,False,False
+RR_last,65,0.2,numeric,basic temporal,False,False
+RR_delta,94,0.2,numeric,basic temporal,False,False
+RR_slope,2771,0.2,numeric,basic temporal,False,False
+RR_obs_hours,1638,0.2,numeric,basic temporal,True,True
+RR_frac_abn,2658,0.2,numeric,TPIFE stages 1-3,False,False
+RR_frac_severe,1126,0.2,numeric,TPIFE stages 1-3,False,False
+RR_auc_dev,2731,0.2,numeric,TPIFE stages 1-3,False,False
+RR_transitions_per24h,2372,0.2,numeric,TPIFE stages 1-3,False,False
+RR_episodes_per24h,2211,0.2,numeric,TPIFE stages 1-3,False,False
+RR_longest_episode_h,1061,0.2,numeric,TPIFE stages 1-3,False,False
+RR_first_episode_h,915,0.2,numeric,TPIFE stages 1-3,False,False
+RR_unresolved,2,0.2,binary,TPIFE stages 1-3,False,False
+RR_early_mean,2718,0.8,numeric,TPIFE stages 1-3,True,False
+RR_mid_mean,2523,0.4,numeric,TPIFE stages 1-3,True,False
+RR_late_mean,2686,0.2,numeric,TPIFE stages 1-3,True,False
+RR_late_minus_early_mean,2754,0.8,numeric,TPIFE stages 1-3,True,False
+RR_deterioration,2403,0.8,numeric,TPIFE stages 1-3,False,False
+SBP_n,89,0.5,numeric,basic temporal,False,True
+SBP_mean,2465,0.5,numeric,basic temporal,False,False
+SBP_min,119,0.5,numeric,basic temporal,False,False
+SBP_max,148,0.5,numeric,basic temporal,False,False
+SBP_std,2744,0.8,numeric,basic temporal,False,False
+SBP_first,167,0.5,numeric,basic temporal,False,False
+SBP_last,147,0.5,numeric,basic temporal,False,False
+SBP_delta,194,0.8,numeric,basic temporal,False,False
+SBP_slope,2752,0.9,numeric,basic temporal,False,False
+SBP_obs_hours,1751,0.5,numeric,basic temporal,True,True
+SBP_frac_abn,1948,0.5,numeric,TPIFE stages 1-3,False,False
+SBP_frac_severe,971,0.5,numeric,TPIFE stages 1-3,False,False
+SBP_auc_dev,1984,0.5,numeric,TPIFE stages 1-3,False,False
+SBP_transitions_per24h,1774,0.5,numeric,TPIFE stages 1-3,False,False
+SBP_episodes_per24h,1652,0.5,numeric,TPIFE stages 1-3,False,False
+SBP_longest_episode_h,661,0.5,numeric,TPIFE stages 1-3,False,False
+SBP_first_episode_h,589,0.5,numeric,TPIFE stages 1-3,False,False
+SBP_unresolved,2,0.5,binary,TPIFE stages 1-3,False,False
+SBP_early_mean,2728,1.6,numeric,TPIFE stages 1-3,True,False
+SBP_mid_mean,2713,1.4,numeric,TPIFE stages 1-3,True,False
+SBP_late_mean,2724,1.4,numeric,TPIFE stages 1-3,True,False
+SBP_late_minus_early_mean,2709,2.4,numeric,TPIFE stages 1-3,True,False
+SBP_deterioration,1632,2.4,numeric,TPIFE stages 1-3,False,False
+Sodium_n,19,0.4,numeric,basic temporal,False,True
+Sodium_mean,459,0.4,numeric,basic temporal,False,False
+Sodium_min,63,0.4,numeric,basic temporal,False,False
+Sodium_max,64,0.4,numeric,basic temporal,False,False
+Sodium_std,509,9.3,numeric,basic temporal,False,False
+Sodium_first,76,0.4,numeric,basic temporal,False,False
+Sodium_last,55,0.4,numeric,basic temporal,False,False
+Sodium_delta,43,9.3,numeric,basic temporal,False,False
+Sodium_slope,1810,34.8,numeric,basic temporal,False,False
+Sodium_ever_abn,2,0.4,binary,TPIFE stages 1-3,False,False
+Sodium_ever_severe,2,0.4,binary,TPIFE stages 1-3,False,False
+Sodium_last_state,3,0.4,numeric,TPIFE stages 1-3,False,False
+SpO2_n,80,0.0,numeric,basic temporal,False,True
+SpO2_mean,1523,0.0,numeric,basic temporal,False,False
+SpO2_min,49,0.0,numeric,basic temporal,False,False
+SpO2_max,8,0.0,numeric,basic temporal,False,False
+SpO2_std,2561,0.0,numeric,basic temporal,False,False
+SpO2_first,33,0.0,numeric,basic temporal,False,False
+SpO2_last,25,0.0,numeric,basic temporal,False,False
+SpO2_delta,51,0.0,numeric,basic temporal,False,False
+SpO2_slope,2776,0.0,numeric,basic temporal,False,False
+SpO2_obs_hours,1721,0.0,numeric,basic temporal,True,True
+SpO2_frac_abn,1161,0.0,numeric,TPIFE stages 1-3,False,False
+SpO2_frac_severe,476,0.0,numeric,TPIFE stages 1-3,False,False
+SpO2_auc_dev,1189,0.0,numeric,TPIFE stages 1-3,False,False
+SpO2_transitions_per24h,1051,0.0,numeric,TPIFE stages 1-3,False,False
+SpO2_episodes_per24h,1000,0.0,numeric,TPIFE stages 1-3,False,False
+SpO2_longest_episode_h,399,0.0,numeric,TPIFE stages 1-3,False,False
+SpO2_first_episode_h,370,0.0,numeric,TPIFE stages 1-3,False,False
+SpO2_unresolved,2,0.0,binary,TPIFE stages 1-3,False,False
+SpO2_early_mean,2503,0.7,numeric,TPIFE stages 1-3,True,False
+SpO2_mid_mean,2130,0.1,numeric,TPIFE stages 1-3,True,False
+SpO2_late_mean,2418,0.1,numeric,TPIFE stages 1-3,True,False
+SpO2_late_minus_early_mean,2714,0.8,numeric,TPIFE stages 1-3,True,False
+SpO2_deterioration,876,0.8,numeric,TPIFE stages 1-3,False,False
+Temp_n,37,1.0,numeric,basic temporal,False,True
+Temp_mean,1283,1.0,numeric,basic temporal,False,False
+Temp_min,112,1.0,numeric,basic temporal,False,False
+Temp_max,112,1.0,numeric,basic temporal,False,False
+Temp_std,2637,1.7,numeric,basic temporal,False,False
+Temp_first,140,1.0,numeric,basic temporal,False,False
+Temp_last,112,1.0,numeric,basic temporal,False,False
+Temp_delta,271,1.7,numeric,basic temporal,False,False
+Temp_slope,2712,2.3,numeric,basic temporal,False,False
+Temp_obs_hours,1958,1.0,numeric,basic temporal,True,True
+Temp_frac_abn,737,1.0,numeric,TPIFE stages 1-3,False,False
+Temp_frac_severe,208,1.0,numeric,TPIFE stages 1-3,False,False
+Temp_auc_dev,752,1.0,numeric,TPIFE stages 1-3,False,False
+Temp_transitions_per24h,693,1.0,numeric,TPIFE stages 1-3,False,False
+Temp_episodes_per24h,678,1.0,numeric,TPIFE stages 1-3,False,False
+Temp_longest_episode_h,334,1.0,numeric,TPIFE stages 1-3,False,False
+Temp_first_episode_h,329,1.0,numeric,TPIFE stages 1-3,False,False
+Temp_unresolved,2,1.0,binary,TPIFE stages 1-3,False,False
+Temp_early_mean,2086,3.6,numeric,TPIFE stages 1-3,True,False
+Temp_mid_mean,2511,1.6,numeric,TPIFE stages 1-3,True,False
+Temp_late_mean,2647,1.8,numeric,TPIFE stages 1-3,True,False
+Temp_late_minus_early_mean,2651,4.4,numeric,TPIFE stages 1-3,True,False
+Temp_deterioration,519,4.4,numeric,TPIFE stages 1-3,False,False
+WBC_n,15,0.8,numeric,basic temporal,False,True
+WBC_mean,1405,0.8,numeric,basic temporal,False,False
+WBC_min,363,0.8,numeric,basic temporal,False,False
+WBC_max,460,0.8,numeric,basic temporal,False,False
+WBC_std,1557,14.2,numeric,basic temporal,False,False
+WBC_first,413,0.8,numeric,basic temporal,False,False
+WBC_last,417,0.8,numeric,basic temporal,False,False
+WBC_delta,724,14.2,numeric,basic temporal,False,False
+WBC_slope,1379,50.3,numeric,basic temporal,False,False
+WBC_ever_abn,2,0.8,binary,TPIFE stages 1-3,False,False
+WBC_ever_severe,2,0.8,binary,TPIFE stages 1-3,False,False
+WBC_last_state,3,0.8,numeric,TPIFE stages 1-3,False,False
+Bilirubin_n,8,31.2,numeric,basic temporal,False,True
+Bilirubin_mean,398,31.2,numeric,basic temporal,False,False
+Bilirubin_min,147,31.2,numeric,basic temporal,False,False
+Bilirubin_max,161,31.2,numeric,basic temporal,False,False
+Bilirubin_std,330,61.9,numeric,basic temporal,False,False
+Bilirubin_first,152,31.2,numeric,basic temporal,False,False
+Bilirubin_last,161,31.2,numeric,basic temporal,False,False
+Bilirubin_delta,186,61.9,numeric,basic temporal,False,False
+Bilirubin_slope,377,86.4,numeric,basic temporal,False,False
+Bilirubin_ever_abn,2,31.2,binary,TPIFE stages 1-3,False,False
+Bilirubin_ever_severe,2,31.2,binary,TPIFE stages 1-3,False,False
+Bilirubin_last_state,3,31.2,numeric,TPIFE stages 1-3,False,False
+Lactate_n,20,19.8,numeric,basic temporal,False,True
+Lactate_mean,766,19.8,numeric,basic temporal,False,False
+Lactate_min,89,19.8,numeric,basic temporal,False,False
+Lactate_max,153,19.8,numeric,basic temporal,False,False
+Lactate_std,1101,39.1,numeric,basic temporal,False,False
+Lactate_first,139,19.8,numeric,basic temporal,False,False
+Lactate_last,107,19.8,numeric,basic temporal,False,False
+Lactate_delta,309,39.1,numeric,basic temporal,False,False
+Lactate_slope,1231,55.7,numeric,basic temporal,False,False
+Lactate_ever_abn,2,19.8,binary,TPIFE stages 1-3,False,False
+Lactate_ever_severe,2,19.8,binary,TPIFE stages 1-3,False,False
+Lactate_last_state,3,19.8,numeric,TPIFE stages 1-3,False,False
+PaCO2_art_n,20,46.0,numeric,basic temporal,False,True
+PaCO2_art_mean,484,46.0,numeric,basic temporal,False,False
+PaCO2_art_min,71,46.0,numeric,basic temporal,False,False
+PaCO2_art_max,91,46.0,numeric,basic temporal,False,False
+PaCO2_art_std,653,62.5,numeric,basic temporal,False,False
+PaCO2_art_first,89,46.0,numeric,basic temporal,False,False
+PaCO2_art_last,72,46.0,numeric,basic temporal,False,False
+PaCO2_art_delta,80,62.5,numeric,basic temporal,False,False
+PaCO2_art_slope,784,71.8,numeric,basic temporal,False,False
+PaCO2_art_ever_abn,2,46.0,binary,TPIFE stages 1-3,False,False
+PaCO2_art_ever_severe,2,46.0,binary,TPIFE stages 1-3,False,False
+PaCO2_art_last_state,3,46.0,numeric,TPIFE stages 1-3,False,False
+PaO2_art_n,20,46.0,numeric,basic temporal,False,True
+PaO2_art_mean,875,46.0,numeric,basic temporal,False,False
+PaO2_art_min,257,46.0,numeric,basic temporal,False,False
+PaO2_art_max,418,46.0,numeric,basic temporal,False,False
+PaO2_art_std,895,62.5,numeric,basic temporal,False,False
+PaO2_art_first,377,46.0,numeric,basic temporal,False,False
+PaO2_art_last,269,46.0,numeric,basic temporal,False,False
+PaO2_art_delta,373,62.5,numeric,basic temporal,False,False
+PaO2_art_slope,784,71.8,numeric,basic temporal,False,False
+PaO2_art_ever_abn,2,46.0,binary,TPIFE stages 1-3,False,False
+PaO2_art_ever_severe,2,46.0,binary,TPIFE stages 1-3,False,False
+PaO2_art_last_state,3,46.0,numeric,TPIFE stages 1-3,False,False
+pH_art_n,20,45.7,numeric,basic temporal,False,True
+pH_art_mean,521,45.7,numeric,basic temporal,False,False
+pH_art_min,69,45.7,numeric,basic temporal,False,False
+pH_art_max,51,45.7,numeric,basic temporal,False,False
+pH_art_std,724,62.3,numeric,basic temporal,False,False
+pH_art_first,70,45.7,numeric,basic temporal,False,False
+pH_art_last,56,45.7,numeric,basic temporal,False,False
+pH_art_delta,118,62.3,numeric,basic temporal,False,False
+pH_art_slope,794,71.4,numeric,basic temporal,False,False
+pH_art_ever_abn,2,45.7,binary,TPIFE stages 1-3,False,False
+pH_art_ever_severe,2,45.7,binary,TPIFE stages 1-3,False,False
+pH_art_last_state,3,45.7,numeric,TPIFE stages 1-3,False,False
+tpife_mean_frac_abn,2775,0.0,numeric,TPIFE stage 4 (aggregation),False,False
+tpife_n_vitals_ever_severe,8,0.0,numeric,TPIFE stage 4 (aggregation),False,False
+tpife_n_vitals_deteriorating,7,0.0,numeric,TPIFE stage 4 (aggregation),False,False
+tpife_n_vitals_unresolved,7,0.0,numeric,TPIFE stage 4 (aggregation),False,False
+tpife_n_vitals_observed,3,0.0,numeric,TPIFE stage 4 (aggregation),False,True
+vaso_any,2,0.0,binary,organ support,False,False
+dobutamine_any,2,0.0,binary,organ support,False,False
+n_vasoactive_agents,5,0.0,numeric,organ support,False,False
+nee_max,1015,0.0,numeric,organ support,False,False
+nee_mean_24h,1032,0.0,numeric,organ support,False,False
+vaso_hours,946,0.0,numeric,organ support,False,False
+fio2_max,18,38.5,numeric,organ support,False,False
+pf_min,508,61.8,numeric,organ support,False,False
+sf_min,170,51.1,numeric,organ support,False,False
+resp_support_level,4,0.0,numeric,organ support,False,False
+uo_ml_kg_h,1633,41.1,numeric,organ support,False,False
+osbi_cardiovascular,1056,0.0,numeric,organ burden (OSBI),False,False
+osbi_respiratory,571,0.0,numeric,organ burden (OSBI),False,False
+osbi_renal,3,0.3,numeric,organ burden (OSBI),False,False
+osbi_hepatic,3,31.2,numeric,organ burden (OSBI),False,False
+osbi_coagulation,3,0.5,numeric,organ burden (OSBI),False,False
+osbi_neurological,1367,0.1,numeric,organ burden (OSBI),False,False
+osbi_metabolic,3,16.2,numeric,organ burden (OSBI),False,False
+osbi_total,2202,0.0,numeric,organ burden (OSBI),False,False
+osbi_n_systems_involved,8,0.0,numeric,organ burden (OSBI),False,False
+osbi_n_systems_severe,8,0.0,numeric,organ burden (OSBI),False,False
+stab_HR_arv,1235,0.1,numeric,stability component,False,False
+stab_HR_cv,2775,0.0,numeric,stability component,False,False
+stab_MAP_arv,1527,0.3,numeric,stability component,False,False
+stab_MAP_cv,2776,0.0,numeric,stability component,False,False
+stab_RR_arv,973,0.5,numeric,stability component,False,False
+stab_RR_cv,2772,0.2,numeric,stability component,False,False
+stab_SpO2_arv,737,0.1,numeric,stability component,False,False
+stab_SpO2_cv,2715,0.0,numeric,stability component,False,False
+sirs_count,5,0.0,numeric,interaction / SIRS,False,False
+sirs_temp,2,0.0,binary,interaction / SIRS,False,False
+sirs_hr,2,0.0,binary,interaction / SIRS,False,False
+sirs_resp,2,0.0,binary,interaction / SIRS,False,False
+sirs_wbc,2,0.0,binary,interaction / SIRS,False,False
+sirs_x_sofa,52,0.0,numeric,interaction / SIRS,False,False
+hypotension_hours,25,0.0,numeric,interaction / SIRS,False,False
+hypotension_x_lactate,463,19.9,numeric,interaction / SIRS,False,False
+hypoxaemia_tachycardia_hours,16,0.0,numeric,interaction / SIRS,False,False
+creat_rise,73,11.1,numeric,interaction / SIRS,False,False
+creat_rise_x_oliguria,48,46.1,numeric,interaction / SIRS,False,False
+shock_index_max,2035,0.5,numeric,interaction / SIRS,False,False

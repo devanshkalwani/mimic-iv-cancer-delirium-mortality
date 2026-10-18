@@ -1,0 +1,17 @@
+# exact versions used for the paper (Python 3.13.9)
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.7.2
+xgboost==3.2.0
+catboost==1.2.8
+lightgbm==4.7.0
+optuna==4.9.0
+imbalanced-learn==0.14.0
+comorbidipy==0.8.0
+matplotlib==3.10.6
+shap==0.50.0
+statsmodels==0.14.5
+joblib
+openpyxl
+jupyter

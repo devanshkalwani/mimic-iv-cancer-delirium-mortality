@@ -1,0 +1,2 @@
+arm,n_complete_case,auc_complete_case_model,auc_main_model_same_patients,pct_uncertain_at_threshold,accuracy_certain,accuracy_uncertain
+random_split,351,0.7617218543046358,0.7668543046357615,0.02877697841726619,0.7203703703703703,0.375

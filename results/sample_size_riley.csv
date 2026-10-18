@@ -1,0 +1,3 @@
+arm,n_train,events,prevalence,parameters_P,assumed_C,R2_CoxSnell,n_crit1_shrinkage,n_crit2_optimism,n_crit3_intercept,n_required,adequate,EPP
+random_split,2221,848,0.382,25,0.764,0.197,1013,597,363,1013,True,33.9
+temporal_split,1373,524,0.382,32,0.764,0.197,1297,765,363,1297,True,16.4

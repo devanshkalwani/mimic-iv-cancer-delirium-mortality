@@ -1,0 +1,60 @@
+section,check,result,detail
+A frozen,NB1-NB3 outputs unchanged since NB4 started,PASS,47 files
+A frozen,"NB3 verification file: no FAIL (INFO rows are numbers for the paper, not checks)",PASS,"111 PASS, 0 FAIL, 4 INFO"
+B leakage,one ICU stay per person (subject_id unique),PASS,
+B leakage,random_split: no ICU stay in both training and test,PASS,
+B leakage,random_split: no person in both training and test,PASS,
+B leakage,random_split: training + test = whole cohort,PASS,
+B leakage,random split: stratified (mortality differs < 1 point),PASS,0.0005
+B leakage,random_split: out-of-fold file = training patients only,PASS,
+B leakage,random_split: prepared train/test files hold the split's patients,PASS,
+B leakage,random_split: prepared train and test have identical columns,PASS,
+B leakage,random_split: final model features = selected_features file,PASS,25 features
+B leakage,random_split: no outcome-like name among final features,PASS,[]
+B leakage,random_split: no measurement-process feature (pool B rule),PASS,[]
+B leakage,random_split: every final feature exists in the prepared data,PASS,[]
+B leakage,random_split: outcome not among prepared predictors,PASS,
+C locked rules,random_split: tier cut-offs = tertiles of training OOF risk,PASS,
+C locked rules,random_split: decision threshold maximises Youden J on training OOF,PASS,J(thr) 0.42433 vs max 0.42433
+C locked rules,random_split: threshold in model bundle = locked threshold,PASS,
+B leakage,temporal_split: no ICU stay in both training and test,PASS,
+B leakage,temporal_split: no person in both training and test,PASS,
+B leakage,temporal_split: training + test = whole cohort,PASS,
+B leakage,temporal split: all training <= 2017 < all test,PASS,"train max 2017, test min 2018"
+B leakage,temporal_split: out-of-fold file = training patients only,PASS,
+B leakage,temporal_split: prepared train/test files hold the split's patients,PASS,
+B leakage,temporal_split: prepared train and test have identical columns,PASS,
+B leakage,temporal_split: final model features = selected_features file,PASS,32 features
+B leakage,temporal_split: no outcome-like name among final features,PASS,[]
+B leakage,temporal_split: no measurement-process feature (pool B rule),PASS,[]
+B leakage,temporal_split: every final feature exists in the prepared data,PASS,[]
+B leakage,temporal_split: outcome not among prepared predictors,PASS,
+C locked rules,temporal_split: tier cut-offs = tertiles of training OOF risk,PASS,
+C locked rules,temporal_split: decision threshold maximises Youden J on training OOF,PASS,J(thr) 0.42077 vs max 0.42077
+C locked rules,temporal_split: threshold in model bundle = locked threshold,PASS,
+D timeline,25 model/rule/selection/CV files written before the test was opened (2026-10-18 12:27:34),PASS,[]
+D timeline,test results written after the test was opened,PASS,[]
+E tables,S2 comparisons = CV t-test file + test DeLong files,PASS,[]
+E tables,S3 ablation test AUROCs = test_model_auc files,PASS,[]
+E tables,S5 complete-case AUROC = NB3 file,PASS,[]
+E tables,S6 hyperparameters = tuning files,PASS,[]
+E tables,S7 feature list = features inside the saved final models,PASS,[]
+E tables,S9 Multi-View AUROC = test_model_auc files,PASS,[]
+E tables,Table 3 tier counts = NB3 test_risk_tiers.csv,PASS,
+E tables,Table 6 'All test patients' AUROC and CI = headline metrics,PASS,
+E tables,Cochran's Q heterogeneity p-values recomputed,PASS,[]
+E tables,Riley: assumed C = nested-CV Soft-Voting AUROC,PASS,
+E tables,Riley: parameters P = number of final features,PASS,
+F figures,fig1_flow_diagram: PNG (>=300 dpi) + vector PDF present,PASS,"1734x2277 px, 300 dpi"
+F figures,fig2_roc_pr: PNG (>=300 dpi) + vector PDF present,PASS,"2737x2552 px, 300 dpi"
+F figures,fig3_calibration: PNG (>=300 dpi) + vector PDF present,PASS,"2857x1524 px, 300 dpi"
+F figures,fig4_decision_curve: PNG (>=300 dpi) + vector PDF present,PASS,"2857x1292 px, 300 dpi"
+F figures,fig5_shap: PNG (>=300 dpi) + vector PDF present,PASS,"3179x1652 px, 300 dpi"
+F figures,fig6_dependence_pdp: PNG (>=300 dpi) + vector PDF present,PASS,"3280x2091 px, 300 dpi"
+F figures,fig7_risk_tiers_uncertainty: PNG (>=300 dpi) + vector PDF present,PASS,"3692x1295 px, 300 dpi"
+F figures,fig8_subgroups_forest: PNG (>=300 dpi) + vector PDF present,PASS,"3244x2141 px, 300 dpi"
+F figures,figS2_shap_temporal: PNG (>=300 dpi) + vector PDF present,PASS,"3179x1652 px, 300 dpi"
+F figures,figS3_gcs_paradox: PNG (>=300 dpi) + vector PDF present,PASS,"4270x1494 px, 300 dpi"
+G privacy,"no paper table (Tables 1-6, S1-S9) contains patient IDs",PASS,[]
+G privacy,"patient-level NB4 files listed (keep private, never push)",PASS,data/processed_v2/nb4/shap_test_random_split.csv; data/processed_v2/nb4/shap_test_temporal_split.csv
+G privacy,all_tables.xlsx has no patient-ID columns,PASS,

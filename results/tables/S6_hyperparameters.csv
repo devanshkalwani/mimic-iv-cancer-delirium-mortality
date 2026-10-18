@@ -1,0 +1,13 @@
+arm,model,hyperparameters,imbalance_handling
+random_split,LR,C=1.5021,class_weights
+random_split,DT,max_depth=6; min_samples_leaf=47,class_weights
+random_split,RF,n_estimators=900; max_depth=18; min_samples_leaf=1; max_features=log2,class_weights
+random_split,XGB,n_estimators=1400; learning_rate=0.0122; max_depth=3; subsample=0.6222; colsample_bytree=0.3681; min_child_weight=1; reg_lambda=0.143,class_weights
+random_split,CatBoost,iterations=1100; learning_rate=0.0093; depth=4; l2_leaf_reg=19.0869; bagging_temperature=0.1704,class_weights
+random_split,LightGBM,n_estimators=1300; learning_rate=0.0165; num_leaves=22; max_depth=2; subsample=0.4634; colsample_bytree=0.3668; min_child_samples=54,class_weights
+temporal_split,LR,C=0.018,class_weights
+temporal_split,DT,max_depth=10; min_samples_leaf=42,class_weights
+temporal_split,RF,n_estimators=1300; max_depth=15; min_samples_leaf=5; max_features=log2,class_weights
+temporal_split,XGB,n_estimators=1300; learning_rate=0.0166; max_depth=2; subsample=0.7862; colsample_bytree=0.3433; min_child_weight=17; reg_lambda=0.4536,class_weights
+temporal_split,CatBoost,iterations=1500; learning_rate=0.0057; depth=5; l2_leaf_reg=6.6382; bagging_temperature=0.33,class_weights
+temporal_split,LightGBM,n_estimators=1700; learning_rate=0.0103; num_leaves=37; max_depth=2; subsample=0.613; colsample_bytree=0.5069; min_child_samples=65,class_weights

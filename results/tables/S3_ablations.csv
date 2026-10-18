@@ -1,0 +1,5 @@
+model,CV AUROC: A_with_measurement,CV AUROC: B_primary,CV AUROC: C_no_TPIFE,Test random: primary (uncalibrated),Test random: no TPIFE (uncalibrated),Test random: with measurement (uncalibrated),Test temporal: primary (uncalibrated),Test temporal: no TPIFE (uncalibrated),Test temporal: with measurement (uncalibrated)
+LR,0.7591,0.7595,0.7606,,,,,,
+SoftVoting,0.7641,0.7645,0.7566,0.7734,0.7688,0.7653,0.763,0.7603,0.7718
+Stacking,,0.7688,,,,,,,
+XGB,0.7617,0.7631,0.7531,,,,,,

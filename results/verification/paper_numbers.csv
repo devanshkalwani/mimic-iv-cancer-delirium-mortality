@@ -1,0 +1,107 @@
+item,arm,value,ci_lo,ci_hi,ci_method,display,source
+"Final cohort, n",all,2777.0,,,,2777,cohort_final.csv
+"Final cohort, 28-day deaths",all,1060.0,,,,1060,cohort_final.csv
+"Final cohort, 28-day mortality %",all,38.17068779258192,,,,38.2,cohort_final.csv
+Test set n,random_split,556.0,,,,556,test_predictions_random_split.csv
+Test set deaths,random_split,212.0,,,,212,test_predictions_random_split.csv
+Final model AUROC,random_split,0.7735780495831505,0.7343097032891602,0.8128463958771407,DeLong,0.774 (0.734-0.813),test_predictions_random_split.csv
+Final model AUPRC,random_split,0.6359557390553882,0.5831338386822652,0.6916472665638254,"bootstrap 2,000 (stratified)",0.636 (0.583-0.692),test_headline_metrics.csv
+Final model Brier score,random_split,0.18779892408785576,0.17256902025708779,0.20435568297216336,"bootstrap 2,000 (stratified)",0.188 (0.173-0.204),test_headline_metrics.csv
+Calibration slope,random_split,0.8306850526646234,,,,0.83,test_headline_metrics.csv
+Calibration intercept (calibration-in-the-large),random_split,0.10699797585358654,,,,0.11,test_headline_metrics.csv
+Expected/observed ratio,random_split,0.9507546401496185,,,,0.95,test_headline_metrics.csv
+ICI,random_split,0.033079318471315906,,,,0.033,calibration_metrics.csv
+E90,random_split,0.050186568832463474,,,,0.050,calibration_metrics.csv
+Youden threshold (training OOF),random_split,0.42105263157894735,,,,0.421,locked_rules_random_split.json
+Sensitivity at threshold,random_split,0.5943396226415094,0.5283018867924528,0.6556603773584906,"bootstrap 1,000 (stratified)",0.594 (0.528-0.656),test_headline_metrics.csv
+Specificity at threshold,random_split,0.7819767441860465,0.7383720930232558,0.8226744186046512,"bootstrap 1,000 (stratified)",0.782 (0.738-0.823),test_headline_metrics.csv
+PPV at threshold,random_split,0.6268656716417911,0.5700332125603864,0.6804123711340206,"bootstrap 1,000 (stratified)",0.627 (0.570-0.680),test_headline_metrics.csv
+NPV at threshold,random_split,0.7577464788732394,0.7254193809829649,0.7871783401127774,"bootstrap 1,000 (stratified)",0.758 (0.725-0.787),test_headline_metrics.csv
+Stacking AUROC,random_split,0.769238152698552,0.7293381848753259,0.8091381205217781,DeLong,0.769 (0.729-0.809),test_predictions_random_split.csv
+Logistic regression AUROC,random_split,0.7414436156208863,0.6994932147993842,0.7833940164423885,DeLong,0.741 (0.699-0.783),test_predictions_random_split.csv
+SOFA AUROC,random_split,0.5822317902588855,0.5339468182561972,0.6305167622615738,DeLong,0.582 (0.534-0.631),test_predictions_random_split.csv
+APACHE II AUROC,random_split,0.5602854870557262,0.5113887268273081,0.6091822472841444,DeLong,0.560 (0.511-0.609),test_predictions_random_split.csv
+XGBoost AUROC,random_split,0.7717200526546731,0.731904814835667,0.8115352904736792,DeLong,0.772 (0.732-0.812),test_predictions_random_split.csv
+Multi-View AUROC,random_split,0.7773968845985081,0.7383327502923467,0.8164610189046695,DeLong,0.777 (0.738-0.816),test_predictions_random_split.csv
+DeLong p: SoftVoting vs Stacking (pre-specified),random_split,0.30503266293312703,,,,0.3050,test_delong_random_split.csv
+DeLong p: SoftVoting vs SOFA (pre-specified),random_split,2.823146172888842e-11,,,,0.0000,test_delong_random_split.csv
+DeLong p: SoftVoting vs APACHE-II (pre-specified),random_split,9.429252134819823e-13,,,,0.0000,test_delong_random_split.csv
+DeLong p: SoftVoting vs SV_noTPIFE (pre-specified),random_split,0.48330752482025574,,,,0.4833,test_delong_random_split.csv
+DeLong p: SoftVoting vs SV_with_measurement (pre-specified),random_split,0.22971724216501466,,,,0.2297,test_delong_random_split.csv
+Tier cut-off Low/Intermediate,random_split,0.2290076335877862,,,,0.229,locked_rules_random_split.json
+Tier cut-off Intermediate/High,random_split,0.4910714285714285,,,,0.491,locked_rules_random_split.json
+Observed mortality % - Low tier,random_split,14.009661835748794,,,,14.0,test_predictions_random_split.csv
+Observed mortality % - Intermediate tier,random_split,39.02439024390244,,,,39.0,test_predictions_random_split.csv
+Observed mortality % - High tier,random_split,64.32432432432432,,,,64.3,test_predictions_random_split.csv
+% uncertain (tier),random_split,7.194244604316546,,,,7.2,test_predictions_random_split.csv
+AUROC - CAM-ICU positive by 24 h,random_split,0.8325977988449386,0.7813494333660237,0.8784760815081181,"bootstrap 2,000 (stratified)",0.833 (0.781-0.878),table6_delirium24h_deployment.csv
+n - CAM-ICU positive by 24 h,random_split,275.0,,,,275,table6_delirium24h_deployment.csv
+AUROC - Not positive by 24 h,random_split,0.7144808743169399,0.6519697223151556,0.7761451711832272,"bootstrap 2,000 (stratified)",0.714 (0.652-0.776),table6_delirium24h_deployment.csv
+n - Not positive by 24 h,random_split,281.0,,,,281,table6_delirium24h_deployment.csv
+Net benefit at 30% threshold (final model),random_split,0.21145940390544707,,,,0.211,test_predictions_random_split.csv
+Net benefit at 30% threshold (treat all),random_split,0.11613566289825289,,,,0.116,test_predictions_random_split.csv
+Test set n,temporal_split,1404.0,,,,1404,test_predictions_temporal_split.csv
+Test set deaths,temporal_split,536.0,,,,536,test_predictions_temporal_split.csv
+Final model AUROC,temporal_split,0.7585320087351262,0.7328603089376249,0.7842037085326274,DeLong,0.759 (0.733-0.784),test_predictions_temporal_split.csv
+Final model AUPRC,temporal_split,0.6425762165072333,0.6102445200997356,0.6761587362007077,"bootstrap 2,000 (stratified)",0.643 (0.610-0.676),test_headline_metrics.csv
+Final model Brier score,temporal_split,0.1901262356300545,0.1803130002400414,0.20008234107067213,"bootstrap 2,000 (stratified)",0.190 (0.180-0.200),test_headline_metrics.csv
+Calibration slope,temporal_split,0.8666928249765987,,,,0.87,test_headline_metrics.csv
+Calibration intercept (calibration-in-the-large),temporal_split,-0.01327879246226723,,,,-0.01,test_headline_metrics.csv
+Expected/observed ratio,temporal_split,1.0062754418500965,,,,1.01,test_headline_metrics.csv
+ICI,temporal_split,0.0211147452644907,,,,0.021,calibration_metrics.csv
+E90,temporal_split,0.03456121669045236,,,,0.035,calibration_metrics.csv
+Youden threshold (training OOF),temporal_split,0.3682921803222532,,,,0.368,locked_rules_temporal_split.json
+Sensitivity at threshold,temporal_split,0.7481343283582089,0.7107742537313433,0.7873134328358209,"bootstrap 1,000 (stratified)",0.748 (0.711-0.787),test_headline_metrics.csv
+Specificity at threshold,temporal_split,0.6394009216589862,0.6082949308755761,0.6693836405529954,"bootstrap 1,000 (stratified)",0.639 (0.608-0.669),test_headline_metrics.csv
+PPV at threshold,temporal_split,0.561624649859944,0.5376933119896029,0.5868676726763634,"bootstrap 1,000 (stratified)",0.562 (0.538-0.587),test_headline_metrics.csv
+NPV at threshold,temporal_split,0.8043478260869565,0.7795562329241936,0.8290960451977402,"bootstrap 1,000 (stratified)",0.804 (0.780-0.829),test_headline_metrics.csv
+Stacking AUROC,temporal_split,0.7704536075383451,0.7452131494445791,0.7956940656321112,DeLong,0.770 (0.745-0.796),test_predictions_temporal_split.csv
+Logistic regression AUROC,temporal_split,0.7753413233372309,0.7503680861595204,0.8003145605149414,DeLong,0.775 (0.750-0.800),test_predictions_temporal_split.csv
+SOFA AUROC,temporal_split,0.5879337471628034,0.5573130116301817,0.6185544826954252,DeLong,0.588 (0.557-0.619),test_predictions_temporal_split.csv
+APACHE II AUROC,temporal_split,0.5666300553683197,0.5362446015117469,0.5970155092248924,DeLong,0.567 (0.536-0.597),test_predictions_temporal_split.csv
+XGBoost AUROC,temporal_split,0.7576991196093267,0.7318254089176993,0.783572830300954,DeLong,0.758 (0.732-0.784),test_predictions_temporal_split.csv
+Multi-View AUROC,temporal_split,0.7739936549969049,0.7487966070477753,0.7991907029460344,DeLong,0.774 (0.749-0.799),test_predictions_temporal_split.csv
+DeLong p: SoftVoting vs Stacking (pre-specified),temporal_split,0.0004994077931432368,,,,0.0005,test_delong_temporal_split.csv
+DeLong p: SoftVoting vs SOFA (pre-specified),temporal_split,4.423712926050099e-22,,,,0.0000,test_delong_temporal_split.csv
+DeLong p: SoftVoting vs APACHE-II (pre-specified),temporal_split,8.206036392339373e-27,,,,0.0000,test_delong_temporal_split.csv
+DeLong p: SoftVoting vs SV_noTPIFE (pre-specified),temporal_split,0.6211853167475978,,,,0.6212,test_delong_temporal_split.csv
+DeLong p: SoftVoting vs SV_with_measurement (pre-specified),temporal_split,0.10189512407106166,,,,0.1019,test_delong_temporal_split.csv
+Tier cut-off Low/Intermediate,temporal_split,0.225,,,,0.225,locked_rules_temporal_split.json
+Tier cut-off Intermediate/High,temporal_split,0.4999999999999999,,,,0.500,locked_rules_temporal_split.json
+Observed mortality % - Low tier,temporal_split,15.433403805496829,,,,15.4,test_predictions_temporal_split.csv
+Observed mortality % - Intermediate tier,temporal_split,30.69620253164557,,,,30.7,test_predictions_temporal_split.csv
+Observed mortality % - High tier,temporal_split,59.512195121951216,,,,59.5,test_predictions_temporal_split.csv
+% uncertain (tier),temporal_split,10.683760683760683,,,,10.7,test_predictions_temporal_split.csv
+AUROC - CAM-ICU positive by 24 h,temporal_split,0.814965331684803,0.7810902254318611,0.8450361435626523,"bootstrap 2,000 (stratified)",0.815 (0.781-0.845),table6_delirium24h_deployment.csv
+n - CAM-ICU positive by 24 h,temporal_split,786.0,,,,786,table6_delirium24h_deployment.csv
+AUROC - Not positive by 24 h,temporal_split,0.687914884400888,0.6478639883047269,0.7274515404190806,"bootstrap 2,000 (stratified)",0.688 (0.648-0.727),table6_delirium24h_deployment.csv
+n - Not positive by 24 h,temporal_split,618.0,,,,618,table6_delirium24h_deployment.csv
+Net benefit at 30% threshold (final model),temporal_split,0.1900691900691901,,,,0.190,test_predictions_temporal_split.csv
+Net benefit at 30% threshold (treat all),temporal_split,0.11680911680911682,,,,0.117,test_predictions_temporal_split.csv
+"Nested CV AUROC (mean, SD in ci_lo) - SoftVoting",random_split,0.7645,0.0184,,SD over 25 folds,0.764 (0.018-nan),cv/cv_summary.csv
+"Nested CV AUROC (mean, SD in ci_lo) - Stacking",random_split,0.7688,0.0173,,SD over 25 folds,0.769 (0.017-nan),cv/cv_summary.csv
+"Nested CV AUROC (mean, SD in ci_lo) - XGB",random_split,0.7631,0.0193,,SD over 25 folds,0.763 (0.019-nan),cv/cv_summary.csv
+"Nested CV AUROC (mean, SD in ci_lo) - LR",random_split,0.7595,0.0162,,SD over 25 folds,0.759 (0.016-nan),cv/cv_summary.csv
+"Nested CV AUROC (mean, SD in ci_lo) - SOFA",random_split,0.5868,0.0227,,SD over 25 folds,0.587 (0.023-nan),cv/cv_summary.csv
+"Nested CV AUROC (mean, SD in ci_lo) - APACHE-II",random_split,0.5528,0.0217,,SD over 25 folds,0.553 (0.022-nan),cv/cv_summary.csv
+Riley minimum sample size,random_split,1013.0,,,,1013,sample_size_riley.csv
+Events per predictor parameter,random_split,33.9,,,,33.9,sample_size_riley.csv
+Riley minimum sample size,temporal_split,1297.0,,,,1297,sample_size_riley.csv
+Events per predictor parameter,temporal_split,16.4,,,,16.4,sample_size_riley.csv
+GCS paradox OR per point - M1 first GCS only (unadjusted),all,1.0301318907089965,1.0114863910010516,1.049121097126643,Wald,1.030 (1.011-1.049),gcs_paradox_models.csv
+GCS paradox OR per point - M2 + intubation in first 24 h,all,1.0043484767409812,0.9806491291797129,1.0286205664361252,Wald,1.004 (0.981-1.029),gcs_paradox_models.csv
+"GCS paradox OR per point - M3 + GCS trajectory (slope, late-minus-early)",all,0.9861311515797954,0.9638259006752589,1.0089525996705309,Wald,0.986 (0.964-1.009),gcs_paradox_models.csv
+GCS paradox OR per point - M4 + intubation + trajectory,all,0.9110967723983788,0.8805637301133116,0.9426885304121324,Wald,0.911 (0.881-0.943),gcs_paradox_models.csv
+"GCS paradox OR per point - M5 M4 + age, metastatic cancer, SOFA without CNS",all,0.9254847558003962,0.8923507464811994,0.959849068985975,Wald,0.925 (0.892-0.960),gcs_paradox_models.csv
+Post-hoc: Soft-Voting (uncalibrated) vs logistic regression [All test patients] AUROC difference,random_split,0.032,0.0111,0.0539,"paired bootstrap 2,000; DeLong p=0.0039; Holm p=0.0199",0.032 (0.011-0.054),posthoc_model_comparisons.csv
+"Post-hoc: Soft-Voting (calibrated, final) vs logistic regression [All test patients] AUROC difference",random_split,0.0321,0.0108,0.0541,"paired bootstrap 2,000; DeLong p=0.0042; Holm p=0.0199",0.032 (0.011-0.054),posthoc_model_comparisons.csv
+Post-hoc: Soft-Voting (uncalibrated) vs Multi-View [All test patients] AUROC difference,random_split,-0.0039,-0.0258,0.0173,"paired bootstrap 2,000; DeLong p=0.7256; Holm p=1.0000",-0.004 (-0.026-0.017),posthoc_model_comparisons.csv
+Post-hoc: Soft-Voting (uncalibrated) vs logistic regression [CAM-ICU positive by 24 h] AUROC difference,random_split,0.042,0.0134,0.0722,"paired bootstrap 2,000; DeLong p=0.0045; Holm p=0.0199",0.042 (0.013-0.072),posthoc_model_comparisons.csv
+"Post-hoc: Soft-Voting (calibrated, final) vs logistic regression [CAM-ICU positive by 24 h] AUROC difference",random_split,0.0439,0.0148,0.0746,"paired bootstrap 2,000; DeLong p=0.0033; Holm p=0.0199",0.044 (0.015-0.075),posthoc_model_comparisons.csv
+Post-hoc: Soft-Voting (uncalibrated) vs Multi-View [CAM-ICU positive by 24 h] AUROC difference,random_split,-0.0064,-0.0369,0.0238,"paired bootstrap 2,000; DeLong p=0.6728; Holm p=1.0000",-0.006 (-0.037-0.024),posthoc_model_comparisons.csv
+Post-hoc: Soft-Voting (uncalibrated) vs logistic regression [All test patients] AUROC difference,temporal_split,-0.0123,-0.025,-0.0002,"paired bootstrap 2,000; DeLong p=0.0595; Holm p=0.2381",-0.012 (-0.025--0.000),posthoc_model_comparisons.csv
+"Post-hoc: Soft-Voting (calibrated, final) vs logistic regression [All test patients] AUROC difference",temporal_split,-0.0168,-0.03,-0.004,"paired bootstrap 2,000; DeLong p=0.0140; Holm p=0.0829",-0.017 (-0.030--0.004),posthoc_model_comparisons.csv
+Post-hoc: Soft-Voting (uncalibrated) vs Multi-View [All test patients] AUROC difference,temporal_split,-0.011,-0.0259,0.0038,"paired bootstrap 2,000; DeLong p=0.1523; Holm p=0.2484",-0.011 (-0.026-0.004),posthoc_model_comparisons.csv
+Post-hoc: Soft-Voting (uncalibrated) vs logistic regression [CAM-ICU positive by 24 h] AUROC difference,temporal_split,-0.0139,-0.0301,0.0018,"paired bootstrap 2,000; DeLong p=0.0907; Holm p=0.2484",-0.014 (-0.030-0.002),posthoc_model_comparisons.csv
+"Post-hoc: Soft-Voting (calibrated, final) vs logistic regression [CAM-ICU positive by 24 h] AUROC difference",temporal_split,-0.0148,-0.0315,0.0017,"paired bootstrap 2,000; DeLong p=0.0828; Holm p=0.2484",-0.015 (-0.032-0.002),posthoc_model_comparisons.csv
+Post-hoc: Soft-Voting (uncalibrated) vs Multi-View [CAM-ICU positive by 24 h] AUROC difference,temporal_split,-0.0221,-0.0397,-0.005,"paired bootstrap 2,000; DeLong p=0.0138; Holm p=0.0829",-0.022 (-0.040--0.005),posthoc_model_comparisons.csv

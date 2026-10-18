@@ -1,0 +1,58 @@
+arm,feature,label,family,TPIFE family,SHAP rank (test),mean |SHAP|,nested-CV selection %
+random_split,elix_metacanc,Metastatic cancer,comorbidity (Elixhauser),False,1,0.0461,100.0
+random_split,Temp_late_mean,Temp mean 12-24h,TPIFE stages 1-3,True,2,0.0398,100.0
+random_split,elix_vw_chronic,Elixhauser score (chronic),comorbidity (Elixhauser),False,3,0.033,100.0
+random_split,Hematocrit_max,Hematocrit max,basic temporal,False,4,0.033,100.0
+random_split,Lactate_min,Lactate min,basic temporal,False,5,0.032,100.0
+random_split,sofa_total,SOFA score,severity score,False,6,0.0311,88.0
+random_split,GCS_Total_slope,GCS slope,basic temporal,False,7,0.0303,92.0
+random_split,age_at_admission,Age,demographics/cancer,False,8,0.0274,100.0
+random_split,HR_mid_mean,HR mean 6-12h,TPIFE stages 1-3,True,9,0.0263,88.0
+random_split,SpO2_mean,SpO2 mean,basic temporal,False,10,0.0251,84.0
+random_split,Platelets_max,Platelets max,basic temporal,False,11,0.0251,84.0
+random_split,tpife_mean_frac_abn,"Time abnormal, all vitals (TPIFE)",TPIFE stage 4 (aggregation),True,12,0.0232,68.0
+random_split,WBC_min,WBC min,basic temporal,False,13,0.0229,96.0
+random_split,HR_early_mean,HR mean 0-6h,TPIFE stages 1-3,True,14,0.0227,56.0
+random_split,SBP_last,SBP last,basic temporal,False,15,0.0218,52.0
+random_split,Potassium_min,Potassium min,basic temporal,False,16,0.021,88.0
+random_split,SBP_std,SBP SD,basic temporal,False,17,0.021,84.0
+random_split,osbi_neurological,Neurological burden (OSBI),organ burden (OSBI),True,18,0.0201,80.0
+random_split,WBC_std,WBC SD,basic temporal,False,19,0.02,96.0
+random_split,HR_late_mean,HR mean 12-24h,TPIFE stages 1-3,True,20,0.0191,48.0
+random_split,RR_auc_dev,RR abnormality burden,TPIFE stages 1-3,True,21,0.0185,60.0
+random_split,weight_kg,Weight,context,False,22,0.0177,100.0
+random_split,GCS_Total_std,GCS SD,basic temporal,False,23,0.017,56.0
+random_split,apache_age_pts,APACHE II age points,severity score,False,24,0.0136,84.0
+random_split,GCS_Total_episodes_per24h,GCS abnormal episodes /24h,TPIFE stages 1-3,True,25,0.0125,84.0
+temporal_split,elix_metacanc,Metastatic cancer,comorbidity (Elixhauser),False,1,0.0533,
+temporal_split,elix_vw_chronic,Elixhauser score (chronic),comorbidity (Elixhauser),False,2,0.0344,
+temporal_split,tpife_mean_frac_abn,"Time abnormal, all vitals (TPIFE)",TPIFE stage 4 (aggregation),True,3,0.0327,
+temporal_split,sofa_total,SOFA score,severity score,False,4,0.0298,
+temporal_split,Lactate_min,Lactate min,basic temporal,False,5,0.0255,
+temporal_split,HR_delta,HR change,basic temporal,False,6,0.0229,
+temporal_split,GCS_Total_slope,GCS slope,basic temporal,False,7,0.0228,
+temporal_split,Hematocrit_max,Hematocrit max,basic temporal,False,8,0.0226,
+temporal_split,shock_index_max,Shock index max,interaction / SIRS,False,9,0.0217,
+temporal_split,GCS_Total_std,GCS SD,basic temporal,False,10,0.0216,
+temporal_split,WBC_min,WBC min,basic temporal,False,11,0.0206,
+temporal_split,weight_kg,Weight,context,False,12,0.0204,
+temporal_split,Temp_late_mean,Temp mean 12-24h,TPIFE stages 1-3,True,13,0.0201,
+temporal_split,RR_early_mean,RR mean 0-6h,TPIFE stages 1-3,True,14,0.0195,
+temporal_split,Lactate_last_state,Lactate last state,TPIFE stages 1-3,True,15,0.0188,
+temporal_split,SBP_mean,SBP mean,basic temporal,False,16,0.0186,
+temporal_split,Temp_max,Temp max,basic temporal,False,17,0.0181,
+temporal_split,GCS_Total_last,GCS last,basic temporal,False,18,0.0177,
+temporal_split,Potassium_mean,Potassium mean,basic temporal,False,19,0.0173,
+temporal_split,WBC_std,WBC SD,basic temporal,False,20,0.0173,
+temporal_split,HR_late_mean,HR mean 12-24h,TPIFE stages 1-3,True,21,0.0169,
+temporal_split,HR_early_mean,HR mean 0-6h,TPIFE stages 1-3,True,22,0.0168,
+temporal_split,SBP_late_mean,SBP mean 12-24h,TPIFE stages 1-3,True,23,0.0161,
+temporal_split,apache_age_pts,APACHE II age points,severity score,False,24,0.0156,
+temporal_split,age_at_admission,Age,demographics/cancer,False,25,0.0144,
+temporal_split,Platelets_delta,Platelets change,basic temporal,False,26,0.0142,
+temporal_split,SBP_std,SBP SD,basic temporal,False,27,0.0136,
+temporal_split,stab_HR_arv,HR variability (ARV),stability component,True,28,0.0126,
+temporal_split,MAP_delta,MAP change,basic temporal,False,29,0.0124,
+temporal_split,GCS_Total_episodes_per24h,GCS abnormal episodes /24h,TPIFE stages 1-3,True,30,0.0122,
+temporal_split,MAP_late_mean,MAP mean 12-24h,TPIFE stages 1-3,True,31,0.012,
+temporal_split,SBP_first_episode_h,SBP hours to first abnormal episode,TPIFE stages 1-3,True,32,0.011,

@@ -1,0 +1,4 @@
+Feature set,CV AUROC mean,SD,Gain vs current,Folds better,Decision (pre-set rule: add only if gain >= 0.005)
+current 25 features,0.7797,0.0177,0.0,0.0,keep current model
++ new labs (20% rule applied),0.7844,0.0215,0.0048,0.6666666666666666,keep current model
++ all new labs (no 20% rule),0.7852,0.0201,0.0056,0.7333333333333333,keep current model

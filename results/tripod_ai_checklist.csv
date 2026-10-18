@@ -1,0 +1,53 @@
+item,topic,what_we_report,status,where_or_action
+1,Title,Development + validation of ML model; cancer ICU patients with delirium; 28-day mortality,Write in manuscript,State 'development and temporal validation'
+2,Abstract,Follow TRIPOD+AI for Abstracts,Write in manuscript,Include intended-use result (CAM-ICU+ by 24 h AUROC 0.83/0.82)
+3a,Background,"Context, rationale, existing models (SOFA/APACHE II)",Write in manuscript,
+3b,Background,"Target population, intended purpose and users",Write in manuscript,ICU clinicians; adults with cancer and delirium detected by 24 h; prediction at 24 h
+3c,Background,Known health inequalities,Write in manuscript,Discuss sex/age; race/ethnicity not analysed -> limitation
+4,Objectives,Development and validation objectives,Write in manuscript,
+5a,Data sources,"MIMIC-IV v3.1, single centre (BIDMC)",Ready - evidence in pipeline,NB1
+5b,Data dates,"Admissions 2008-2022 (anchor years), era split <=2017 / >2017",Ready - evidence in pipeline,NB1 calendar era
+6a,Setting,"ICUs of one tertiary academic centre, Boston, USA",Write in manuscript,
+6b,Eligibility,"Cancer ICD (2,052 codes) + delirium (ICD or CAM-ICU), first ICU stay, age >=18, ICU stay >=24 h",Ready - evidence in pipeline,NB1 attrition + icd_code_appendix
+6c,Treatments,Vasopressors/ventilation in first 24 h used as predictors; later treatment not modelled,Write in manuscript,Discuss treatment-limitation decisions in cancer
+7,Data preparation,"Plausibility ranges, unit conversion, artefact rules, windows",Ready - evidence in pipeline,NB2 cleaning_log.csv
+8a,Outcome,Death within 28 days of ICU admission (hospital + patients.dod),Ready - evidence in pipeline,
+8b,Outcome assessors,Objective outcome (death),Not applicable - state why,No subjective assessment
+8c,Outcome blinding,Death recorded independently of predictors,Not applicable - state why,
+9a,Predictor choice,391 candidate features; ELIX acute categories excluded (no POA flag),Ready - evidence in pipeline,NB2 Step 10; S8 dictionary
+9b,Predictor definitions,All windows/thresholds defined,Ready - evidence in pipeline,S8 dictionary + tpife_thresholds.csv
+9c,Predictor assessors,CAM-ICU nursing assessment (inclusion only),Write in manuscript,CAM-ICU not a predictor; describe routine nursing assessment
+10,Sample size,All eligible patients; Riley criteria + EPP,Ready - evidence in pipeline,Part A of this cell
+11,Missing data,"20% rule (lactate 30%), MICE fitted on training only, complete-case sensitivity",Ready - evidence in pipeline,NB3 cell 2; S5
+12a,Data use/partition,Random 80/20 + temporal split; nested 5x5 CV,Ready - evidence in pipeline,NB3
+12b,Predictor handling,"Clipping 0.5-99.5%, scaling, CSI, one-hot",Ready - evidence in pipeline,v2_prep.py
+12c,Model type/building,6 learners + ensembles; stability SHAP-RFE; Optuna; pre-written selection rule,Ready - evidence in pipeline,NB3 cells 3-6; S6
+12d,Heterogeneity across clusters,Single centre: temporal era as cluster,Write in manuscript,Report random vs temporal performance
+12e,Performance measures,"AUROC, AUPRC, Brier, calibration slope/ICI, DCA, DeLong",Ready - evidence in pipeline,NB3 cell 7; NB4 cell 3
+12f,Model updating,No updating after test,Not applicable - state why,Test opened once
+12g,Prediction calculation,Isotonic-calibrated Soft-Voting probability,Ready - evidence in pipeline,
+13,Class imbalance,"Class weights (SMOTEENN tested, rejected); isotonic recalibration",Ready - evidence in pipeline,NB3 cell 4
+14,Fairness,"Pre-specified subgroups: cancer type, sex, age, delirium timing; Cochran's Q",Ready - evidence in pipeline,"NB4 cell 6, Fig 8"
+15,Model output,Calibrated risk + Venn-Abers interval; Youden threshold from training OOF; locked tertile tiers,Ready - evidence in pipeline,NB3 cell 6-7; NB4 cell 5
+16,Development vs evaluation,Table S1 SMD train vs test (both splits),Ready - evidence in pipeline,NB4 cell 2
+17,Ethics,"MIMIC-IV: de-identified, IRB-approved (BIDMC/MIT), consent waived; PhysioNet credentialed access + DUA",Write in manuscript,Cite PhysioNet MIMIC-IV approval
+18a,Funding,Funding source / none,ACTION NEEDED,Add statement
+18b,Conflicts of interest,Declarations,ACTION NEEDED,Add statement
+18c,Protocol,analysis_plan_v2.json + pre-specified rules; no formal protocol,Write in manuscript,Provide analysis plan as supplement
+18d,Registration,Not registered,Write in manuscript,State 'not registered'
+18e,Data sharing,MIMIC-IV available via PhysioNet to credentialed users,Write in manuscript,
+18f,Code sharing,Notebooks + v2_*.py modules,ACTION NEEDED,Create public GitHub repository (no patient data) and cite it
+19,Patient/public involvement,None,Write in manuscript,State 'no PPI'
+20a,Participant flow,"Attrition 74,503 -> 2,777; 1,060 deaths",Ready - evidence in pipeline,NB1 attrition_counts_final.csv -> flow diagram (Figure 1)
+20b,Participant characteristics,Table 1,Ready - evidence in pipeline,NB4 cell 2
+20c,Development vs evaluation comparison,Table S1,Ready - evidence in pipeline,NB4 cell 2
+21,Participants/events per analysis,Train/test n and deaths both splits,Ready - evidence in pipeline,"Tables 1, 2, S1"
+22,Full model specification,Saved models + hyperparameters + feature list,ACTION NEEDED,"Share final_<arm>.joblib or code to rebuild; S6, S7"
+23a,Performance with CIs incl. subgroups,"Table 2, Figs 2-4, 8, Table 6",Ready - evidence in pipeline,"NB3 cell 7; NB4 cells 3, 6"
+23b,Heterogeneity across clusters,Random vs temporal test,Write in manuscript,
+24,Model updating results,None,Not applicable - state why,
+25,Interpretation,Incl. fairness (hematologic lower AUROC),Write in manuscript,
+26,Limitations,Single centre; delirium any time in stay; no external validation; variability features may reflect monitoring intensity; race not analysed,Write in manuscript,Use methods-log disclosure list
+27a,Poor-quality/missing inputs,Training-fitted imputer + clipping ship with model; uncertainty flag,Write in manuscript,
+27b,User requirements,24 h of routine EHR data; CAM-ICU documented,Write in manuscript,
+27c,Next steps,"External validation (e.g. eICU-CRD), prospective evaluation of decision pathway",Write in manuscript,
