@@ -1,0 +1,22 @@
+number,value,source
+eICU AUROC all,0.672 (0.606-0.738),V1 recomputed
+eICU calibration slope,0.24,V1 recomputed
+eICU intercept,-0.82,V1 recomputed
+eICU E/O,1.59,V1 recomputed
+eICU ICI,0.144,V1 recomputed
+eICU Brier,0.191,V1 recomputed
+eICU AUROC CAM-ICU+ by 24 h (n=138),0.681 (0.573-0.789),V1 recomputed
+eICU temporal model AUROC / slope,0.682 (0.618-0.746) / 0.52,V1 recomputed
+eICU AUROC ICD-only comorbidity,0.694 (0.629-0.758),V1 recomputed
+APACHE IVa AUROC (n),0.668 (0.601-0.735) (n=330); model same patients 0.680; p=0.67,V1 recomputed
+SOFA / APACHE II AUROC (all),0.685 / 0.635,V1 recomputed
+tier Low n / observed % / predicted %,143 / 12.6 / 11.7,V1 recomputed
+tier Intermediate n / observed % / predicted %,135 / 16.3 / 34.3,V1 recomputed
+tier High n / observed % / predicted %,121 / 38.8 / 62.4,V1 recomputed
+AUROC difference CAM+ vs not,"0.013, p = 0.847",V1 recomputed
+recalibrated (10-fold CV) slope / E/O / ICI / Brier,0.76 / 1.00 / 0.056 / 0.167,V1 recomputed
+full-data recalibration intercept / slope,-1.12 / 0.24,V1 recomputed
+net benefit at 20% frozen / recalibrated / treat-all,0.055 / 0.051 / 0.023,table_eicu_decision_curve.csv
+net benefit at 25% frozen / recalibrated / treat-all,0.017 / 0.049 / -0.043,table_eicu_decision_curve.csv
+net benefit at 30% frozen / recalibrated / treat-all,-0.021 / 0.009 / -0.117,table_eicu_decision_curve.csv
+cohort: stays / analysed / deaths / hospitals / CAM+ by 24 h,403 / 399 / 87 (21.8%) / 64 / 138,V4

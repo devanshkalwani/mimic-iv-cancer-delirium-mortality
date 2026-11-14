@@ -1,0 +1,24 @@
+characteristic,eICU,eICU_missing_%
+"Age, years, median [IQR]",68 [59–76],0.0
+"Male sex, n (%)",230 (57.6),0.0
+"Weight, kg, median [IQR]",75.8 [63.0–90.2],0.8
+"Cancer type: Gastrointestinal, n (%)",93 (23.3),0.0
+"Cancer type: Genitourinary, n (%)",44 (11.0),0.0
+"Cancer type: Hematologic, n (%)",57 (14.3),0.0
+"Cancer type: Respiratory/Thoracic, n (%)",94 (23.6),0.0
+"Cancer type: Other/Unspecified, n (%)",111 (27.8),0.0
+"Metastatic cancer (Elixhauser), n (%)",110 (27.6),0.0
+"van Walraven chronic score, median [IQR]",9 [4–14],0.0
+"SOFA at 24 h, median [IQR]",5 [3–8],0.0
+"APACHE II at 24 h, median [IQR]",21 [17–26],0.0
+"Vasopressor within 24 h, n (%)",88 (22.1),0.0
+"Intubated within 24 h (verbal GCS = ETT), n (%)",70 (17.5),0.0
+"Lactate measured within 24 h, n (%)",197 (49.4),0.0
+"GCS measured within 24 h, n (%)",354 (88.7),0.0
+"Delirium identified by CAM-ICU only, n (%)",285 (71.4),0.0
+"Delirium identified by ICD + CAM-ICU, n (%)",12 (3.0),0.0
+"Delirium identified by ICD only, n (%)",102 (25.6),0.0
+"CAM-ICU positive by 24 h, n (%)",138 (34.6),0.0
+"28-day mortality, n (%)",87 (21.8),0.0
+"eICU APACHE IVa predicted hospital mortality, %, median [IQR]",15.5 [6.5–29.1],17.3
+"Hospitals, n",64,

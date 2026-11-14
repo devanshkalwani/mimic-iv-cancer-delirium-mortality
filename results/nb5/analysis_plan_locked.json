@@ -1,0 +1,41 @@
+{
+  "locked_at": "2026-11-11T11:18:45",
+  "cohort_file_md5": "25e98c9ce53dacbeb002a890cca8c5ea",
+  "cohort_n": 403,
+  "hospitals": 64,
+  "intended_use_n": 140,
+  "outcome": "Death in hospital within 28 days of ICU admission: patient.hospitaldischargestatus == 'Expired' AND hospitaldischargeoffset <= 40320 min (offsets are from ICU admission). eICU has no post-discharge death date, so deaths after hospital discharge are not captured (limitation).",
+  "primary_model": "final_random_split.joblib -> final_calibrated (Soft-Voting XGB+RF+CatBoost, isotonic), 25 predictors",
+  "secondary_model": "final_temporal_split.joblib -> final_calibrated, 32 predictors",
+  "predictors": "built from eICU first 24 h exactly as Notebook 2 (vitals 0-24 h, labs -6 to +24 h, same cleaning ranges, same TPIFE thresholds/carry-forward caps); predictors not used by the model are not built",
+  "missing_data": "frozen MIMIC preparation object (prep_<arm>.joblib): clip to MIMIC training limits, frozen MICE imputation; NOTHING is refitted on eICU",
+  "populations": {
+    "primary": "all eICU cohort patients",
+    "secondary": "CAM-ICU positive within 24 h (intended-use group)"
+  },
+  "metrics": [
+    "AUROC with DeLong 95% CI",
+    "AUPRC",
+    "Brier score",
+    "calibration intercept and slope (logistic), E/O ratio, ICI, LOESS calibration plot",
+    "locked threshold (0.421 random / 0.368 temporal): sensitivity, specificity, PPV, NPV (bootstrap CI)",
+    "locked risk tiers (22.9% / 49.1%): observed mortality per tier with Wilson CI",
+    "Venn-Abers uncertainty: share of patients whose interval crosses a tier cut-off",
+    "decision curve: net benefit at 30% vs treat-all"
+  ],
+  "comparators": [
+    "SOFA and APACHE II (rebuilt from eICU first-24-h data with the frozen MIMIC logistic models), DeLong",
+    "eICU's own APACHE IVa predicted hospital mortality (apachePatientResult), discrimination only, as a reference"
+  ],
+  "updating": "Secondary only: logistic recalibration (intercept and slope) reported as an UPDATED model; the primary result is always the frozen, unchanged model",
+  "sensitivity": [
+    "ICD-confirmed cancer only (drop text-only cancer)",
+    "complete-case: patients with all 25 predictors measured",
+    "hospital-cluster bootstrap CI for AUROC (64 hospitals)"
+  ],
+  "rules": [
+    "The outcome is read once, in the evaluation cell, after predictors and predictions are saved",
+    "No model, threshold, tier or preprocessing change after the outcome is read",
+    "All results are reported whatever they show"
+  ]
+}

@@ -6,7 +6,7 @@ The analysis follows TRIPOD+AI (Collins et al., BMJ 2024;385:e078378).
 ## What is in this repository
 | Folder | Content |
 |---|---|
-| `notebooks/` | The four analysis notebooks, in run order (outputs removed) |
+| `notebooks/` | The five analysis notebooks (NB5 = external validation), in run order (outputs removed) |
 | `src/` | Helper modules imported by the notebooks (`v2_*.py`) |
 | `results/` | Aggregate result tables: paper tables (`tables/`), NB3 test/CV summaries (`nb3/`), verification reports (`verification/`) |
 | `figures/` | All paper figures (300-dpi PNG + vector PDF) |
@@ -44,3 +44,12 @@ Python 3.13.9; exact package versions in `requirements.txt`.
 
 ## Licence
 Code: MIT (see `LICENSE`). Use of MIMIC-IV data is governed by the PhysioNet credentialed data use agreement.
+
+## Notebook 5 - external validation in eICU-CRD v2.0
+`notebooks/NB5_eICU_external_validation.ipynb` applies the frozen MIMIC-IV models, unchanged, to adults with cancer and
+delirium in the eICU Collaborative Research Database v2.0 (208 US hospitals; 399 patients from 64 hospitals analysed).
+Order of work, each step fingerprinted and time-stamped (`results/nb5/*.json`): analysis plan locked -> comorbidity
+harmonisation amendment logged -> predictions locked -> outcome opened once -> evaluation -> independent verification
+(`results/nb5/verification/`, 71 checks passed). Aggregate results are in `results/nb5/`, figures in `figures/nb5/`.
+No eICU data are included; eICU-CRD v2.0 requires your own credentialed PhysioNet access
+(https://doi.org/10.13026/C2WM1R). Place the files in `data/eicu.nosync/eicu-collaborative-research-database-2.0/`.

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the accompanying article (citation will be added on publication)."
-title: "Interpretable 24-hour prediction of 28-day mortality in ICU patients with cancer and delirium (MIMIC-IV)"
+title: "Interpretable machine learning model predicting 28-day mortality in ICU patients with cancer and delirium validated over time and across hospitals"
 authors:
   - family-names: Kalwani
     given-names: Devansh

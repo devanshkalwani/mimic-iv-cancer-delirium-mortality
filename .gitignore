@@ -7,3 +7,5 @@ models_v2/
 .ipynb_checkpoints/
 __pycache__/
 .DS_Store
+eicu*/
+*.nosync/

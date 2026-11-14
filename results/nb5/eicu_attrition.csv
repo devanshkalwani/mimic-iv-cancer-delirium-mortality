@@ -1,0 +1,8 @@
+step,icu_stays,patients
+All eICU ICU stays,200859,139367
+Cancer (ICD list or active oncology diagnosis),10924,9055
+... and delirium (ICD or CAM-ICU positive),471,440
+... age >= 18,471,440
+... first qualifying ICU stay per patient,440,440
+... valid ICU discharge time,440,440
+... still in ICU at 24 h (ICU stay >= 24 h),403,403

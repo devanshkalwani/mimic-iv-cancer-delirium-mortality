@@ -1,0 +1,9 @@
+[
+  {
+    "amended_at": "2026-11-11T11:39:09",
+    "before_outcome": true,
+    "change": "Elixhauser chronic comorbidity flags (and van Walraven score, APACHE II chronic points) harmonised: eICU ICD codes OR eICU pastHistory OR ICU diagnosis text; Elixhauser hierarchy applied. PRIMARY = harmonised; SENSITIVITY = ICD codes only (as in the locked plan).",
+    "reason": "eICU diagnosis ICD codes come from the ICU problem list, not full hospital discharge coding: ICD-only van Walraven mean 6.4 vs 13.1 in MIMIC; metastatic cancer 12.4% vs 41.8%. Harmonised: 9.6 and 27.5%. Two label corrections: cor pulmonale not CHF; only chronic blood-loss anaemia.",
+    "harmonised_file_md5": "b4b33f708d07e8ec5a18eadadf7283d3"
+  }
+]

@@ -1,0 +1,74 @@
+group,check,result,detail
+V2 audit,order: plan locked < amendment < predictions locked < outcome opened,PASS,2026-11-11T11:18:45 < 2026-11-11T11:39:09 <= 2026-11-11T11:40:22 < 2026-11-11T11:42:45
+V2 audit,amendment marked before outcome,PASS,
+V2 audit,cohort file unchanged since plan was locked,PASS,
+V2 audit,harmonised model inputs unchanged since amendment,PASS,
+V2 audit,eicu_predictions_harmonised_random_split.csv unchanged since locking,PASS,
+V2 audit,eicu_predictions_harmonised_temporal_split.csv unchanged since locking,PASS,
+V2 audit,eicu_predictions_icd_only_random_split.csv unchanged since locking,PASS,
+V2 audit,eicu_predictions_icd_only_temporal_split.csv unchanged since locking,PASS,
+V2 audit,all prediction-side files last written BEFORE the outcome was opened,PASS,"{'eicu_cohort.csv': '2026-11-05T19:14:59', 'eicu_model_inputs_harmonised.csv': '2026-11-11T11:40:15', 'eicu_predictions_harmonised_random_split.csv': '2026-11-11T11:40:22', 'eicu_predictions_harmonised_temporal_split.csv': '2026-11-11T11:40:22', 'eicu_predictions_icd_only_random_split.csv': '2026-11-11T11:40:22', 'eicu_predictions_icd_only_temporal_split.csv': '2026-11-11T11:40:22'}"
+V2 audit,outcome-based result files written AFTER the outcome was opened,PASS,
+V2 audit,Cell 1 checksum file could not be parsed,INFO,"columns ['file', 'status', 'size']; first row {'file': 'LICENSE.txt', 'status': 'OK', 'size': '0.0 MB'}"
+V3 reproduce,harmonised / random_split: frozen model reproduces locked risk,PASS,max difference 1.11e-16
+V3 reproduce,harmonised / random_split: locked tiers + threshold reproduced,PASS,
+V3 reproduce,harmonised / temporal_split: frozen model reproduces locked risk,PASS,max difference 1.11e-16
+V3 reproduce,harmonised / temporal_split: locked tiers + threshold reproduced,PASS,
+V3 reproduce,icd_only / random_split: frozen model reproduces locked risk,PASS,max difference 1.11e-16
+V3 reproduce,icd_only / random_split: locked tiers + threshold reproduced,PASS,
+V3 reproduce,icd_only / temporal_split: frozen model reproduces locked risk,PASS,max difference 1.53e-14
+V3 reproduce,icd_only / temporal_split: locked tiers + threshold reproduced,PASS,
+V4 cohort/outcome,"cohort: 403 patients, one stay per patient",PASS,"403 stays, 403 patients"
+V4 cohort/outcome,all adults (age >= 18),PASS,
+V4 cohort/outcome,outcome re-derived from raw patient table matches saved outcome,PASS,"399 known, 87 deaths"
+V4 cohort/outcome,"analysed 399 patients, 87 deaths (21.8%)",PASS,"399, 87"
+V4 cohort/outcome,64 hospitals; 138 CAM-ICU+ by 24 h among analysed,PASS,"64 hospitals, 138 CAM+"
+V4 cohort/outcome,saved risk = locked prediction file,PASS,
+V4 cohort/outcome,leakage guard: no outcome-like column in model inputs or predictions,PASS,[]
+V4 cohort/outcome,APACHE IVa read without its actual-outcome columns (Cell 7 usecols),PASS,
+V1 recompute,primary (all): AUROC + DeLong CI,PASS,0.6722 (0.6060-0.7384) vs 0.6722 (0.6060-0.7384)
+V1 recompute,primary (all): calibration slope / intercept / E/O / ICI,PASS,slope 0.237 int -0.817 E/O 1.592 ICI 0.144
+V1 recompute,primary (all): Brier,PASS,0.1910
+V1 recompute,primary (all): sens / spec / PPV / NPV at locked threshold 0.42105263157894735,PASS,0.540/0.740/0.367/0.852
+V1 recompute,primary (all): net benefit at 30%,PASS,-0.0215
+V1 recompute,primary (all): AUROC SOFA + DeLong p vs model,PASS,"0.685, p=0.830"
+V1 recompute,primary (all): AUROC APACHE_II + DeLong p vs model,PASS,"0.635, p=0.287"
+V1 recompute,CAM-ICU+ by 24 h: AUROC + DeLong CI,PASS,0.6810 (0.5732-0.7889) vs 0.6810 (0.5732-0.7889)
+V1 recompute,CAM-ICU+ by 24 h: calibration slope / intercept / E/O / ICI,PASS,slope 0.197 int -0.800 E/O 1.566 ICI 0.127
+V1 recompute,CAM-ICU+ by 24 h: Brier,PASS,0.1893
+V1 recompute,CAM-ICU+ by 24 h: sens / spec / PPV / NPV at locked threshold 0.42105263157894735,PASS,0.500/0.750/0.357/0.844
+V1 recompute,CAM-ICU+ by 24 h: net benefit at 30%,PASS,-0.0093
+V1 recompute,CAM-ICU+ by 24 h: AUROC SOFA + DeLong p vs model,PASS,"0.715, p=0.686"
+V1 recompute,CAM-ICU+ by 24 h: AUROC APACHE_II + DeLong p vs model,PASS,"0.621, p=0.344"
+V1 recompute,not CAM-ICU+ by 24 h: AUROC + DeLong CI,PASS,0.6675 (0.5827-0.7523) vs 0.6675 (0.5827-0.7523)
+V1 recompute,not CAM-ICU+ by 24 h: calibration slope / intercept / E/O / ICI,PASS,slope 0.269 int -0.825 E/O 1.605 ICI 0.153
+V1 recompute,not CAM-ICU+ by 24 h: Brier,PASS,0.1919
+V1 recompute,not CAM-ICU+ by 24 h: sens / spec / PPV / NPV at locked threshold 0.42105263157894735,PASS,0.561/0.735/0.372/0.857
+V1 recompute,not CAM-ICU+ by 24 h: net benefit at 30%,PASS,-0.0279
+V1 recompute,not CAM-ICU+ by 24 h: AUROC SOFA + DeLong p vs model,PASS,"0.671, p=0.983"
+V1 recompute,not CAM-ICU+ by 24 h: AUROC APACHE_II + DeLong p vs model,PASS,"0.644, p=0.558"
+V1 recompute,temporal model: AUROC + DeLong CI,PASS,0.6822 (0.6179-0.7465) vs 0.6822 (0.6179-0.7465)
+V1 recompute,temporal model: calibration slope / intercept / E/O / ICI,PASS,slope 0.516 int -0.843 E/O 1.626 ICI 0.141
+V1 recompute,temporal model: Brier,PASS,0.1906
+V1 recompute,temporal model: sens / spec / PPV / NPV at locked threshold 0.3682921803222532,PASS,0.667/0.590/0.312/0.864
+V1 recompute,temporal model: net benefit at 30%,PASS,0.0079
+V1 recompute,temporal model: AUROC SOFA + DeLong p vs model,PASS,"0.685, p=0.923"
+V1 recompute,temporal model: AUROC APACHE_II + DeLong p vs model,PASS,"0.635, p=0.225"
+V1 recompute,ICD-only comorbidity: AUROC + DeLong CI,PASS,0.6935 (0.6287-0.7584) vs 0.6935 (0.6287-0.7584)
+V1 recompute,ICD-only comorbidity: calibration slope / intercept / E/O / ICI,PASS,slope 0.435 int -0.604 E/O 1.427 ICI 0.102
+V1 recompute,ICD-only comorbidity: Brier,PASS,0.1726
+V1 recompute,ICD-only comorbidity: sens / spec / PPV / NPV at locked threshold 0.42105263157894735,PASS,0.483/0.821/0.429/0.850
+V1 recompute,ICD-only comorbidity: net benefit at 30%,PASS,-0.0011
+V1 recompute,ICD-only comorbidity: AUROC SOFA + DeLong p vs model,PASS,"0.685, p=0.771"
+V1 recompute,ICD-only comorbidity: AUROC APACHE_II + DeLong p vs model,PASS,"0.636, p=0.114"
+V1 recompute,"APACHE IVa: n, AUROC CI, model AUROC same patients, DeLong p",PASS,"n 330, 0.668 (0.601-0.735), model 0.680, p=0.673"
+V1 recompute,tier Low: n and observed mortality,PASS,"n 143, observed 12.6%, predicted 11.7%"
+V1 recompute,tier Intermediate: n and observed mortality,PASS,"n 135, observed 16.3%, predicted 34.3%"
+V1 recompute,tier High: n and observed mortality,PASS,"n 121, observed 38.8%, predicted 62.4%"
+V1 recompute,uncertain share,PASS,6.8%
+V1 recompute,AUROC CAM-ICU+ vs not (Cell 8 printed p = 0.847),INFO,"difference 0.013, p = 0.847"
+V1 recompute,10-fold CV recalibration reproduced,PASS,"max difference 7.2e-11; slope 0.76, E/O 1.00, ICI 0.056, Brier 0.167"
+V1 recompute,decision-curve table (all thresholds) recomputed,PASS,"46 thresholds, max diff 9.9e-17"
+V4 privacy,nb5/tables: aggregate only (no patient or stay IDs),PASS,{}
+V4 privacy,figure zip contains only figures / legends / check file,PASS,"['.csv', '.pdf', '.tif', '.txt']"
+V4 privacy,"figure zip: no patient or stay IDs in any text, legend or figure",PASS,{}
